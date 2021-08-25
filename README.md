@@ -4,7 +4,6 @@
 - 📫 How to reach me:
   - e-mail: cristobal_jjg@hotmail.com
   - Institutional e-mail: cristobal.jimenez101@alu.ulpgc.es
-  - Instagram: @Cristoball_jjg
   - LinkedIn: Not yet
   
 
