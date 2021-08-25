@@ -1,5 +1,6 @@
 - 👋 Hi, I’m @CristobalJJG (Cristóbal José Jiménez Gómez)
 - 🌱 I’m trying to learn as much as I can. This summer I started to study Web Development using HTML and CSS, and at this time, I'm doing online courses on Udemy (https://www.udemy.com/user/cristobal-jose-jimenez-gomez/)
+- I've made a "Web page" with somethings that I learned (http://nanojjg.atwebpages.com/)
 - 📫 How to reach me:
   - e-mail: cristobal_jjg@hotmail.com
   - Institutional e-mail: cristobal.jimenez101@alu.ulpgc.es
