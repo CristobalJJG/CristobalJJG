@@ -1,0 +1,10 @@
+@import './colors.scss';
+
+select {
+    background-color: $dark-gray;
+    color: $white;
+    border: 1px solid $black;
+    font-family: 'Poppins', sans-serif;
+    padding: 5px;
+    border-radius: 5px;
+}

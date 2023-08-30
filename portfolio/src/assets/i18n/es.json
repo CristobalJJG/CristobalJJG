@@ -1,0 +1,15 @@
+{
+  "header": {
+    "resources": "Preferencias",
+    "so": "Sistemas Operativos",
+    "frameworks": "Frameworks",
+    "lang": "Lenguajes",
+    "tools": "Herramientas"
+  },
+  "side": {
+    "description": "Soy un nuevo <strong>Ingeniero Informático</strong> en el sector. Me encanta la <strong>programación</strong> y la <strong>personalización</strong> de Sistemas Operativos.",
+    "preferences": "Preferencias",
+    "front": "Front-end",
+    "so": "Sistema Operativo"
+  }
+}

@@ -1,0 +1,50 @@
+@import '../../../styles.scss';
+
+aside {
+    height: 100%;
+    padding: 10px;
+    background: $gray;
+    background: $container-bg;
+    border-radius: $container-border-radius;
+}
+
+.flex {
+    flex-direction: column;
+    align-items: center;
+}
+
+.img {
+    font-size: 7.5rem;
+}
+
+.name {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0;
+
+    span {
+        font-size: 1.75rem;
+    }
+}
+
+.desc {
+    margin: 10px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.15rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.overflow section {
+    margin-bottom: 20px;
+}

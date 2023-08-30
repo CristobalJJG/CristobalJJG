@@ -1,0 +1,10 @@
+<div class="flex">
+    <div class="flex att" [style.background-color]="tag?.leftColor">
+        <!-- Primer icono -->
+        <img loading="lazy" width="24px" height="24px" src="{{tag?.icon}}" alt="{{tag?.txt}} icon" />
+    </div>
+    <div class="flex name" [style.background-color]="tag?.rightColor">
+        <!-- Segundo Texto -->
+        <p class="r" [style.width]="length">{{tag?.txt | uppercase}} </p>
+    </div>
+</div>

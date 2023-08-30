@@ -1,0 +1,15 @@
+{
+  "header": {
+    "resources": "Preferences",
+    "so": "Operating Systems",
+    "frameworks": "Frameworks",
+    "lang": "Languages",
+    "tools": "Tools"
+  },
+  "side": {
+    "description": "I am a new <strong>Computer Engineer</strong> in the field. I love <strong>programming</strong> and <strong>customizing</strong> Operating Systems.",
+    "preferences": "Preferences",
+    "front": "Front-end",
+    "so": "Operating Systems"
+  }
+}

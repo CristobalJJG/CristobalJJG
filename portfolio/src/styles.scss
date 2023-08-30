@@ -1,0 +1,51 @@
+/* You can add global styles to this file, and also import other style files */
+@import './themes/colors.scss';
+@import './themes/shadows.scss';
+@import './themes/variables.scss';
+@import './themes/forms.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: $background;
+  color: $white;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.grid {
+  display: grid;
+}
+
+.flex {
+  display: flex;
+}
+
+svg {
+  fill: white;
+}
+
+hr {
+  width: 100%;
+  margin: 10px 0;
+  height: .1rem;
+  border-color: $gray;
+  background-color: $gray;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
