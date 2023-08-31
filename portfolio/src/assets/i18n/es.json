@@ -1,6 +1,8 @@
 {
   "header": {
-    "resources": "Preferencias",
+    "resources": "Conocimientos",
+    "info": "Información",
+    "studies": "Estudios",
     "so": "Sistemas Operativos",
     "frameworks": "Frameworks",
     "lang": "Lenguajes",
@@ -11,5 +13,6 @@
     "preferences": "Preferencias",
     "front": "Front-end",
     "so": "Sistema Operativo"
-  }
+  },
+  "knowledge-desc": "<p>En esta sección se exponen mis preferencias a la hora de desarrollar código, entre ellas:</p> <p style='margin-left: 10px; font-size: .9rem'> - Prefiero el uso de <strong style='color:#d42e29'>Angular</strong> como framework y el uso de <strong>TypeScript</strong> como lenguaje de programación.<br />- Como Sistemas Operativos, prefiero el uso de <strong style='color:#ee711a'>Ubuntu</strong>, parala programación, pero no tengo problema en adaptarme a algún otro Sistema Operativo.<br />- En cuanto a herramientas, me gusta el uso de <strong>Figma</strong> y <strong>Photoshop</strong>, pero estoyabierto a aprender o usar cualquier otra herramienta.</p>"
 }

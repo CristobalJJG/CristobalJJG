@@ -17,7 +17,7 @@ select {
 
 .container {
     position: relative;
-    width: 175px;
+    width: 200px;
     text-align: center;
 
     p,
@@ -29,6 +29,7 @@ select {
     }
 
     p {
+        font-size: 1.25rem;
 
         &::after {
             margin-left: auto;

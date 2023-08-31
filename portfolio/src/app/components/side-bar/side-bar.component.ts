@@ -14,7 +14,7 @@ export class SideBarComponent implements OnInit {
   constructor(private http: HttpClient) { }
 
   ngOnInit() {
-    this.http.get('../../assets/tags.json')
+    this.http.get('../../assets/data/tags.json')
       .subscribe((res: any) => {
         let auxF, auxS;
         [auxF, auxS] = [res['tagsFront'][0], res['tagsSO'][0]];

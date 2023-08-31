@@ -1,0 +1,23 @@
+.grid {
+    display: grid;
+}
+
+.fr2 {
+    grid-template-columns: 1fr 1fr;
+}
+
+.fr3 {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.fr4 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.fr5 {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.g1 {
+    flex-grow: 1;
+}
