@@ -1,16 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { SoComponent } from './pages/so/so.page';
-import { FrameworksComponent } from './pages/frameworks/frameworks.page';
-import { LangComponent } from './pages/lang/lang.page';
-import { ToolsComponent } from './pages/tools/tools.page';
+import { InformationComponent } from './pages/information/information.component';
+import { KnowledgeComponent } from './pages/knowledge/knowledge.page';
+import { StudiesComponent } from './pages/studies/studies.page';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/', pathMatch: 'full' },
-  { path: 'so', component: SoComponent },
-  { path: 'framework', component: FrameworksComponent },
-  { path: 'language', component: LangComponent },
-  { path: 'tools', component: ToolsComponent },
+  { path: '', redirectTo: '/information', pathMatch: 'full' },
+  { path: 'information', component: InformationComponent },
+  { path: 'knowledge', component: KnowledgeComponent },
+  { path: 'studies', component: StudiesComponent },
   /* { path: 'home', component: HomePageComponent }, */
 ];
 

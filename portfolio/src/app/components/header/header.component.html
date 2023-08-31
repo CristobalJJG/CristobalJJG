@@ -4,20 +4,21 @@
 </select>
 <div class="flex">
     <div class="container">
-        <p>{{'header.resources' | translate}}
-            <svg width="16" height="16" viewBox="0 0 16 16">
-                <path
-                    d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
-            </svg>
+        <p class="click" routerLink="/knowledge" routerLinkActive="activebutton">
+            {{'header.resources' | translate}}
         </p>
-        <ul class="flex content">
-            <li routerLink="/so" routerLinkActive="activebutton">{{ 'header.so' | translate}}</li>
-            <li routerLink="/framework" routerLinkActive="activebutton">{{ 'header.frameworks' | translate}}</li>
-            <li routerLink="/language" routerLinkActive="activebutton">{{ 'header.lang' | translate}}</li>
-            <li routerLink="/tools" routerLinkActive="activebutton">{{ 'header.tools' | translate}}</li>
-        </ul>
     </div>
     <div class="container">
+        <p class="click" routerLink="/studies" routerLinkActive="activebutton">
+            {{'header.studies' | translate}}
+        </p>
+    </div>
+    <div class="container">
+        <p class="click" routerLink="/information" routerLinkActive="activebutton">
+            {{'header.info' | translate}}
+        </p>
+    </div>
+    <!-- <div class="container">
         <p> Parte 2
             <svg width="16" height="16" viewBox="0 0 16 16">
                 <path
@@ -27,7 +28,7 @@
         <ul class="flex content">
             <li routerLink="/" routerLinkActive="activebutton">{{ 'Nueva parte 2' | translate}}</li>
         </ul>
-    </div>
+    </div> -->
 </div>
 
 <hr />

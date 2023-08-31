@@ -44,19 +44,19 @@
       "txt": "JavaScript",
       "icon": "../../../assets/images/logos/js.png",
       "leftColor": "#555",
-      "rightColor": "#6B4400"
+      "rightColor": "#795e01"
     },
     {
       "txt": "TypeScript",
       "icon": "../../../assets/images/logos/ts.png",
       "leftColor": "#555",
-      "rightColor": "#396783"
+      "rightColor": "#325e9d"
     },
     {
       "txt": "CSS",
       "icon": "../../../assets/images/logos/css.png",
       "leftColor": "#555",
-      "rightColor": "#2C5068"
+      "rightColor": "#325e9d"
     },
     {
       "txt": "SASS",
@@ -80,25 +80,25 @@
       "txt": "Kotlin",
       "icon": "../../../assets/images/logos/kotlin.png",
       "leftColor": "#555",
-      "rightColor": "#4742C7"
+      "rightColor": "#325e9d"
     },
     {
       "txt": "Markdown",
       "icon": "../../../assets/images/logos/md.png",
       "leftColor": "#555",
-      "rightColor": "#1C1C1C"
+      "rightColor": "#363636"
     },
     {
       "txt": "LaTex",
       "icon": "../../../assets/images/logos/latex.png",
       "leftColor": "#555",
-      "rightColor": "#2B2B2B"
+      "rightColor": "#363636"
     },
     {
       "txt": "Shell Script",
       "icon": "../../../assets/images/logos/sh.png",
       "leftColor": "#555",
-      "rightColor": "#20272f"
+      "rightColor": "#363636"
     },
     {
       "txt": "MongoDB",
@@ -112,7 +112,7 @@
       "txt": "Ubuntu 22.04.3 LTS (Jammy Jellyfish)",
       "icon": "../../../assets/images/SO/u22.png",
       "leftColor": "#555",
-      "rightColor": "#7C3B0E"
+      "rightColor": "#7E3007"
     },
     {
       "txt": "Ubuntu 18.04.6 LTS (Bionic Beaver)",
@@ -121,28 +121,28 @@
       "rightColor": "#7E3007"
     },
     {
+      "txt": "Arch Linux",
+      "icon": "../../../assets/images/SO/arch.png",
+      "leftColor": "#555",
+      "rightColor": "#325e9d"
+    },
+    {
       "txt": "Zorin OS 16.3",
       "icon": "../../../assets/images/SO/zorin.png",
       "leftColor": "#555",
-      "rightColor": "#0A4B76"
+      "rightColor": "#325e9d"
     },
     {
       "txt": "Windows 10",
       "icon": "../../../assets/images/SO/w10.png",
       "leftColor": "#555",
-      "rightColor": "#"
+      "rightColor": "#325e9d"
     },
     {
       "txt": "Windows 11",
       "icon": "../../../assets/images/SO/w11.png",
       "leftColor": "#555",
-      "rightColor": "#2C41A0"
-    },
-    {
-      "txt": "Arch Linux",
-      "icon": "../../../assets/images/SO/arch.png",
-      "leftColor": "#555",
-      "rightColor": "#2C41A0"
+      "rightColor": "#325e9d"
     }
   ],
   "tagsTools": [
