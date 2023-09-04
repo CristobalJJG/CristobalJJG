@@ -1,36 +1,36 @@
-@import '../../../styles.scss';
+@import "../../../styles.scss";
 
 .grid,
 .flex {
-    margin: 0px 50px 10px 50px;
-    gap: 10px;
+  margin: 0px 50px 10px 50px;
+  gap: 10px;
 
-    article {
-        height: 275px;
-        overflow-y: auto;
-        overflow-x: hidden;
-    }
+  article {
+    height: 275px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
 }
 
 .flex {
-    flex-wrap: wrap;
-    justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 h2 {
-    font-size: 1.1rem;
-    text-align: center;
-    margin: 10px 0;
+  font-size: 1.1rem;
+  text-align: center;
+  margin: 10px 0;
 }
 
 .container {
-    background-color: rgba($black, .5);
-    box-shadow: $shadow-bot;
-    margin: 5px 5px 20px 5px;
-    border-radius: 10px;
+  background-color: rgba($black, 0.5);
+  box-shadow: $shadow-bot;
+  margin: 5px 5px 20px 5px;
+  border-radius: 10px;
 
-    &.desc {
-        margin: 5px;
-        padding: 10px;
-    }
+  &.desc {
+    margin: 5px;
+    padding: 10px;
+  }
 }

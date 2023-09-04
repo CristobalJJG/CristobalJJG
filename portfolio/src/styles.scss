@@ -1,9 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
-@import './themes/colors.scss';
-@import './themes/shadows.scss';
-@import './themes/variables.scss';
-@import './themes/forms.scss';
-@import './themes/grid.scss';
+@import "./themes/colors.scss";
+@import "./themes/shadows.scss";
+@import "./themes/variables.scss";
+@import "./themes/forms.scss";
+@import "./themes/grid.scss";
+@import "./themes/skeleton.scss";
 
 * {
   margin: 0;
@@ -14,7 +15,7 @@
   }
 
   &::-webkit-scrollbar-track {
-    background: rgba($black, .4);
+    background: rgba($black, 0.4);
   }
 
   &::-webkit-scrollbar-thumb {
@@ -33,10 +34,8 @@ body {
   background-color: $background;
   color: $white;
   width: 100%;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
-
-
 
 .flex {
   display: flex;
@@ -49,7 +48,7 @@ svg {
 hr {
   width: 100%;
   margin: 10px 0;
-  height: .1rem;
+  height: 0.1rem;
   border-color: $gray;
   background-color: $gray;
 }

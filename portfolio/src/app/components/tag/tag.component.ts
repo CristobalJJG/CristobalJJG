@@ -6,7 +6,7 @@ import { Tag } from 'src/class/tag';
   templateUrl: './tag.component.html',
   styleUrls: ['./tag.component.scss']
 })
-export class TagComponent {
+export class TagComponent{
 
   @Input() tag: Tag | undefined;
   @Input() length: string = "100px";

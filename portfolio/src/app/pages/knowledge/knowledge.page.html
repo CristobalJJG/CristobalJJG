@@ -1,33 +1,49 @@
-<section class="grid">
-    <div class="container desc" [innerHTML]="'knowledge-desc' | translate | safeHtml"></div>
+<section class="grid skeleton">
+  <div
+    class="container desc skeleton"
+    [innerHTML]="'knowledge-desc' | translate | safeHtml"
+  ></div>
 </section>
 <section class="grid fr2">
-    <article class="container">
-        <h2>{{ 'header.frameworks' | translate }}</h2>
-        <ul class="flex fr2">
-            <li *ngFor="let i of tagsFront"> <app-tag [tag]="i"></app-tag> </li>
-        </ul>
-    </article>
+  <article class="container skeleton">
+    <span *ngIf="tagsFront.length>0; else skeleton">
+      <h2>{{ 'header.frameworks' | translate }}</h2>
+      <ul class="flex fr2">
+        <li *ngFor="let i of tagsFront"><app-tag [tag]="i"></app-tag></li>
+      </ul>
+    </span>
+  </article>
 
-    <article class="container">
-        <h2>{{ 'header.lang' | translate }}</h2>
-        <ul class="flex fr3">
-            <li *ngFor="let i of tagsLang"> <app-tag [tag]="i"></app-tag> </li>
-        </ul>
+  <article class="container skeleton">
+    <span *ngIf="tagsLang.length>0; else skeleton">
+      <h2>{{ 'header.lang' | translate }}</h2>
+      <ul class="flex fr3">
+        <li *ngFor="let i of tagsLang"><app-tag [tag]="i"></app-tag></li>
+      </ul>
+    </span>
+  </article>
 
-    </article>
+  <article class="container skeleton">
+    <span *ngIf="tagsTools.length>0; else skeleton">
+      <h2>{{ 'header.tools' | translate }}</h2>
+      <ul class="flex fr2">
+        <li *ngFor="let i of tagsTools">
+          <app-tag [tag]="i" [length]="'125px'"></app-tag>
+        </li>
+      </ul>
+    </span>
+  </article>
 
-    <article class="container">
-        <h2>{{ 'header.tools' | translate }}</h2>
-        <ul class="flex fr2">
-            <li *ngFor="let i of tagsTools"> <app-tag [tag]="i"></app-tag> </li>
-        </ul>
-    </article>
-
-    <article class="container">
-        <h2>{{ 'header.so' | translate }}</h2>
-        <ul class="flex fr2">
-            <li *ngFor="let i of tagsSO" class="g1"> <app-tag [tag]="i" [length]="'150px'"></app-tag> </li>
-        </ul>
-    </article>
+  <article class="container skeleton">
+    <span *ngIf="tagsSO.length>0; else skeleton">
+      <h2>{{ 'header.so' | translate }}</h2>
+      <ul class="flex fr2">
+        <li *ngFor="let i of tagsSO" class="g1">
+          <app-tag [tag]="i" [length]="'150px'"></app-tag>
+        </li>
+      </ul>
+    </span>
+  </article>
 </section>
+
+<ng-template #skeleton></ng-template>

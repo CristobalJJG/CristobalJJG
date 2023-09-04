@@ -14,5 +14,5 @@
     "front": "Front-end",
     "so": "Operating Systems"
   },
-  "knowledge-desc": "<p>In this section I expose my preferences when developing code, among them:</p> <p style='margin-left: 10px; font-size: .9rem'> - I prefer the use of <strong style='color:#d42e29'>Angular</strong> as a framework and the use of <strong>TypeScript</strong> as a programming language.</br>- As Operating Systems, I prefer the use of <strong style='color:#ee711a'>Ubuntu</strong>, for programming, but I have no problem adapting to any other Operating System.</br>- As for tools, I like the use of <strong>Figma</strong> and <strong>Photoshop</strong>, but I am open to learning or using any other tool."
+  "knowledge-desc": "<p>In this section I expose my preferences when developing code, among them:</p> <p style='margin-left: 10px; font-size: .9rem'> - <strong style='color:#d42e29'>Angular</strong> as a framework and <strong>TypeScript</strong> as a programming language.</br>- <strong>Figma</strong> and <strong>Photoshop</strong>, but I am open to learning or using any other tool.</br>- <strong style='color:#ee711a'>Ubuntu</strong>, as a Operating System, but I can adapt to any other operating system."
 }

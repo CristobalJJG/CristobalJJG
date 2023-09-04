@@ -19,13 +19,10 @@ export class KnowledgeComponent {
   ngOnInit() {
     this.http.get('../../assets/data/tags.json')
       .subscribe((res: any) => {
-        let auxF, auxL, auxT, auxS;
-        [auxF, auxL, auxT, auxS] = [res['tagsFront'], res['tagsLang'], res['tagsTools'], res['tagsSO']];
-        res['tagsBack'].forEach((e: Tag) => { auxF.push(e) });
-        this.tagsFront = auxF;
-        this.tagsSO = auxS;
-        this.tagsLang = auxL;
-        this.tagsTools = auxT;
+        this.tagsFront = [...res['tagsFront'], ...res['tagsBack']];
+        this.tagsSO = res['tagsSO'];
+        this.tagsLang = res['tagsLang'];
+        this.tagsTools = res['tagsTools'];
       });
   }
 }
