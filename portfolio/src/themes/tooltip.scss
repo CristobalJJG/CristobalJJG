@@ -1,0 +1,28 @@
+@import "./variables.scss";
+
+$width: 75px;
+
+.toptt {
+  position: relative;
+  .tt {
+    width: $width;
+    padding: 5px 15px;
+    top: 2rem;
+    border-radius: 5px;
+    left: calc(50% - $width - 10px);
+    transition: $transition-2s;
+    color: #fff0;
+    background-color: rgba($dark-black, 0);
+    position: absolute;
+  }
+
+  &:hover .tt {
+    transition: $transition-4s;
+    top: 3rem;
+    color: #fff;
+    background-color: $dark-black;
+  }
+}
+
+.tt.top {
+}

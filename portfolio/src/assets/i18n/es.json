@@ -14,5 +14,18 @@
     "front": "Front-end",
     "so": "Sistema Operativo"
   },
-  "knowledge-desc": "<p>En esta sección se exponen mis preferencias a la hora de desarrollar código, entre ellas:</p> <p style='margin-left: 10px; font-size: .9rem'> - <strong style='color:#d42e29'>Angular</strong> como framework y <strong>TypeScript</strong> como lenguaje de programación.<br />- <strong style='color:#ee711a'>Ubuntu</strong>, como Sistema Operativo, pero me adapto a cualquier otro.<br />- <strong>Figma</strong> y <strong>Photoshop</strong>, pero estoy abierto a aprender o usar cualquier otra herramienta.</p>"
+  "knowledge-desc": "<p [property]=binding>En esta sección se exponen mis preferencias a la hora de desarrollar código, entre ellas:</p> <p style='margin-left: 10px; font-size: .9rem'> - <strong style='color:#d42e29'>Angular</strong> como framework y <strong>TypeScript</strong> como lenguaje de programación.<br />- <strong style='color:#ee711a'>Ubuntu</strong>, como Sistema Operativo, pero me adapto a cualquier otro.<br />- <strong>Figma</strong> y <strong>Photoshop</strong>, pero estoy abierto a aprender o usar cualquier otra herramienta.</p>",
+  "study": {
+    "desc1": "La informática está en <strong>constante evolución</strong>, así como el desarrollo web, con la creación de Frameworks que aportan a los desarrolladores distintas capacidades:",
+    "pattern-designs": {
+      "title": "Patrones de Diseño:",
+      "desc": "Los patrones de diseño son <strong style='color: #679ce6'>soluciones</strong> probadas a <strong style='color: #679ce6'>problemas</strong> comunes que nos encontramos en el diseño de software. Son como plantillas que puedes personalizar para resolver un problema de diseño particular en el código.",
+      "uni": "La universidad me ha aportado ciertos <strong style='color: #679ce6'>patrones</strong> a nivel teórico, unos pocos a nivel práctico, y me gustaría seguir <strong style='color: #67e678'>desarrollando mis conocimientos</strong> en cuanto este área del software."
+    },
+    "angular": {
+      "desc": "Personalmente, me gusta la idea de tener dividos los 3 ficheros fundamentales, así como tener bien divididas las distintas funcionalidades. Este Framework es muy amplio, y con muchas capacidades, entre ellas, me gustaría mejorar mis conceptos de:",
+      "pipes": " Los Pipes en Angular son una forma de escribir transformaciones de datos de visualización que se pueden declarar en HTML. Un Pipe toma datos como entrada y transforma esos datos en una salida deseada.",
+      "services": " Un servicio en Angular es, de forma resumida, una clase con un propósito específico Los servicios son un gran lugar para compartir métodos y datos entre componentes. Son decorados con @Injectable() para indicar que pueden ser inyectados en otras clases como dependencias."
+    }
+  }
 }
