@@ -1,7 +1,12 @@
 <header>
   <div id="title" class="toptt">
-    <h1>CristobalJJG.com</h1>
-    <app-tooltip [sentence]="'Hola' | translate" class="tt"></app-tooltip>
+    <h1 class="click" routerLink="/" routerLinkActive="activebutton">
+      CristobalJJG.com
+    </h1>
+    <app-tooltip
+      [sentence]="'header.home' | translate"
+      class="tt"
+    ></app-tooltip>
   </div>
 
   <div class="flex">

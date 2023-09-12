@@ -2,8 +2,7 @@ import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-tooltip',
-  template: "{{ sentence }}",
-  styleUrls: ['./tooltip.component.scss']
+  template: "{{ sentence }}"
 })
 export class TooltipComponent {
 

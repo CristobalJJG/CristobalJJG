@@ -7,18 +7,20 @@ $width: 75px;
   .tt {
     width: $width;
     padding: 5px 15px;
-    top: 2rem;
+    top: 2.5rem; //Bottom por defecto
     border-radius: 5px;
     left: calc(50% - $width - 10px);
     transition: $transition-2s;
     color: #fff0;
+    text-align: center;
+    font-size: small;
     background-color: rgba($dark-black, 0);
     position: absolute;
   }
 
   &:hover .tt {
     transition: $transition-4s;
-    top: 3rem;
+    top: 2.75rem; //Bottom por defecto
     color: #fff;
     background-color: $dark-black;
   }

@@ -15,6 +15,7 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { TooltipComponent } from './components/tooltip/tooltip.component';
 import { HeaderComponent } from './components/header/header.component';
+import { ProfileComponent } from './components/profile/profile.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -24,7 +25,8 @@ export function HttpLoaderFactory(http: HttpClient) {
   declarations: [
     AppComponent,
     TooltipComponent,
-    HeaderComponent
+    HeaderComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,

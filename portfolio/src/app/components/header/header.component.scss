@@ -1,17 +1,19 @@
 @import "../../../styles.scss";
 
-$bg: rgba($gray, 0.3);
+$bg: rgba($gray, 0.25);
 
 header {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   justify-items: center;
-  margin: 30px 100px 10px 100px;
+  margin: 5px $left-right-margin;
   background-color: $bg;
   border-radius: 10px;
   height: 64px;
   backdrop-filter: blur(10px);
+  box-shadow: $shadow-bot;
 }
 
 $less-margin: -200px;

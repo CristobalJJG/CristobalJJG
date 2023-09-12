@@ -1,0 +1,74 @@
+@import "../../../styles.scss";
+
+.container {
+  width: 70%;
+  margin: 0 15%;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.data {
+  width: 60%;
+}
+
+.picture {
+  width: 40%;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem !important;
+  text-align: justify;
+  margin-bottom: 25px;
+}
+
+.networks {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  margin-top: 15px;
+}
+
+svg {
+  filter: drop-shadow($d-shadow-bot);
+  transition: $transition-3s;
+
+  .svg {
+    height: 100%;
+    aspect-ratio: 1;
+    fill: white;
+    transition: $transition-3s;
+  }
+  &:hover {
+    filter: drop-shadow(0 10px 10px rgb(0, 0, 0));
+
+    .svg {
+      fill: $gray;
+    }
+  }
+}
+
+.pict {
+  background-image: url("../../../assets/images/Orla.jpeg");
+  height: 400px;
+  width: 300px;
+  animation: morph 8s ease-in-out infinite;
+  border: 2px solid $gray;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: $shadow-bot;
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}

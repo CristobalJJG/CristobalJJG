@@ -1,0 +1,23 @@
+@import "../styles.scss";
+
+app-header {
+  position: fixed;
+}
+
+main {
+  position: relative;
+}
+
+.main {
+  margin: 10px $left-right-margin;
+  width: calc(100% - ($left-right-margin * 2));
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile {
+  width: 100%;
+}

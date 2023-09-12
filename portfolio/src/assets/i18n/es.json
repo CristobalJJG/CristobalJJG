@@ -3,10 +3,7 @@
     "resources": "Conocimientos",
     "info": "Información",
     "studies": "Estudios",
-    "so": "Sistemas Operativos",
-    "frameworks": "Frameworks",
-    "lang": "Lenguajes",
-    "tools": "Herramientas"
+    "home": "Inicio"
   },
   "side": {
     "description": "Soy un nuevo <strong>Ingeniero Informático</strong> en el sector. Me encanta la <strong>programación</strong> y la <strong>personalización</strong> de Sistemas Operativos.",
