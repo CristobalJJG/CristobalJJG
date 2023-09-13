@@ -2,203 +2,129 @@
   "tagsFront": [
     {
       "txt": "Angular",
-      "icon": "../../../assets/images/knowledge/logos/angular.png",
-      "leftColor": "#555",
-      "rightColor": "#a70a05"
+      "icon": "../../../assets/images/logos/frameworks/Angular.png"
     },
     {
       "txt": "Ionic",
-      "icon": "../../../assets/images/knowledge/logos/ionic.png",
-      "leftColor": "#555",
-      "rightColor": "#325e9d"
+      "icon": "../../../assets/images/logos/frameworks/Ionic.png"
     },
     {
       "txt": "Kotlin",
-      "icon": "../../../assets/images/knowledge/logos/android.png",
-      "leftColor": "#555",
-      "rightColor": "#27570A"
+      "icon": "../../../assets/images/logos/frameworks/Android.png"
     }
   ],
   "tagsBack": [
     {
       "txt": "ExpressJS",
-      "icon": "../../../assets/images/knowledge/logos/ex.png",
-      "leftColor": "#555",
-      "rightColor": "#363636"
+      "icon": "../../../assets/images/logos/frameworks/ExpressJS.png"
     },
     {
       "txt": "DJango",
-      "icon": "../../../assets/images/knowledge/logos/django.png",
-      "leftColor": "#555",
-      "rightColor": "#092c1e"
+      "icon": "../../../assets/images/logos/frameworks/django.png"
     }
   ],
   "tagsLang": [
     {
       "txt": "HTML",
-      "icon": "../../../assets/images/knowledge/languages/html.png",
-      "leftColor": "#555",
-      "rightColor": "#7E3007"
+      "icon": "../../../assets/images/logos/langs/html.png"
     },
     {
       "txt": "JavaScript",
-      "icon": "../../../assets/images/knowledge/languages/js.png",
-      "leftColor": "#555",
-      "rightColor": "#795e01"
-    },
-    {
-      "txt": "TypeScript",
-      "icon": "../../../assets/images/knowledge/languages/ts.png",
-      "leftColor": "#555",
-      "rightColor": "#325e9d"
+      "icon": "../../../assets/images/logos/langs/JS.png"
     },
     {
       "txt": "CSS",
-      "icon": "../../../assets/images/knowledge/languages/css.png",
-      "leftColor": "#555",
-      "rightColor": "#325e9d"
+      "icon": "../../../assets/images/logos/langs/css.png"
     },
     {
       "txt": "SASS",
-      "icon": "../../../assets/images/knowledge/languages/sass.png",
-      "leftColor": "#555",
-      "rightColor": "#B11131"
+      "icon": "../../../assets/images/logos/langs/sass.png"
+    },
+    {
+      "txt": "TypeScript",
+      "icon": "../../../assets/images/logos/langs/TS.png"
     },
     {
       "txt": "Python",
-      "icon": "../../../assets/images/knowledge/languages/py.png",
-      "leftColor": "#555",
-      "rightColor": "#795E01"
-    },
-    {
-      "txt": "Java",
-      "icon": "../../../assets/images/knowledge/languages/java.png",
-      "leftColor": "#555",
-      "rightColor": "#8E1D10"
-    },
-    {
-      "txt": "Kotlin",
-      "icon": "../../../assets/images/knowledge/languages/kotlin.png",
-      "leftColor": "#555",
-      "rightColor": "#325e9d"
-    },
-    {
-      "txt": "Markdown",
-      "icon": "../../../assets/images/knowledge/languages/md.png",
-      "leftColor": "#555",
-      "rightColor": "#363636"
-    },
-    {
-      "txt": "LaTex",
-      "icon": "../../../assets/images/knowledge/languages/latex.png",
-      "leftColor": "#555",
-      "rightColor": "#363636"
+      "icon": "../../../assets/images/logos/langs/py.png"
     },
     {
       "txt": "Shell Script",
-      "icon": "../../../assets/images/knowledge/languages/sh.png",
-      "leftColor": "#555",
-      "rightColor": "#363636"
-    },
-    {
-      "txt": "MongoDB",
-      "icon": "../../../assets/images/knowledge/languages/mongodb.png",
-      "leftColor": "#555",
-      "rightColor": "#27570a"
+      "icon": "../../../assets/images/logos/langs/sh.png"
     }
   ],
   "tagsSO": [
     {
       "txt": "Ubuntu 22.04.3 LTS (Jammy Jellyfish)",
-      "icon": "../../../assets/images/knowledge/SO/u22.png",
-      "leftColor": "#555",
-      "rightColor": "#7E3007"
+      "icon": "../../../assets/images/logos/so/ubuntu.png"
     },
     {
       "txt": "Windows 11",
-      "icon": "../../../assets/images/knowledge/SO/w11.png",
-      "leftColor": "#555",
-      "rightColor": "#325e9d"
+      "icon": "../../../assets/images/logos/so/windows.png"
     },
     {
       "txt": "Arch Linux",
-      "icon": "../../../assets/images/knowledge/SO/arch.png",
-      "leftColor": "#555",
-      "rightColor": "#325e9d"
-    },
-    {
-      "txt": "Ubuntu 18.04.6 LTS (Bionic Beaver)",
-      "icon": "../../../assets/images/knowledge/SO/u18.png",
-      "leftColor": "#555",
-      "rightColor": "#7E3007"
-    },
-    {
-      "txt": "Zorin OS 16.3",
-      "icon": "../../../assets/images/knowledge/SO/zorin.png",
-      "leftColor": "#555",
-      "rightColor": "#325e9d"
-    },
-    {
-      "txt": "Windows 10",
-      "icon": "../../../assets/images/knowledge/SO/w10.png",
-      "leftColor": "#555",
-      "rightColor": "#325e9d"
+      "icon": "../../../assets/images/logos/so/arch.png"
     }
   ],
   "tagsTools": [
     {
       "txt": "Figma",
-      "icon": "../../../assets/images/knowledge/tools/figma.png",
-      "leftColor": "#555",
-      "rightColor": "#363636"
+      "icon": "../../../assets/images/logos/tools/figma.png"
     },
     {
       "txt": "Photoshop",
-      "icon": "../../../assets/images/knowledge/tools/photoshop.png",
-      "leftColor": "#555",
-      "rightColor": "#325e9d"
+      "icon": "../../../assets/images/logos/tools/photoshop.png"
     },
     {
       "txt": "Vercel",
-      "icon": "../../../assets/images/knowledge/tools/vercel.png",
-      "leftColor": "#555",
-      "rightColor": "#363636"
+      "icon": "../../../assets/images/logos/tools/vercel.png"
     },
     {
       "txt": "Illustrator",
-      "icon": "../../../assets/images/knowledge/tools/illustrator.png",
-      "leftColor": "#555",
-      "rightColor": "#c85f16"
+      "icon": "../../../assets/images/logos/tools/illustrator.png"
     },
     {
       "txt": "AWS",
-      "icon": "../../../assets/images/knowledge/tools/aws.png",
-      "leftColor": "#555",
-      "rightColor": "#c85f16"
+      "icon": "../../../assets/images/logos/tools/aws.png"
     },
     {
       "txt": "Gimp",
-      "icon": "../../../assets/images/knowledge/tools/gimp.png",
-      "leftColor": "#555",
-      "rightColor": "#363636"
+      "icon": "../../../assets/images/logos/tools/gimp.png"
     },
     {
       "txt": "Word",
-      "icon": "../../../assets/images/knowledge/tools/word.png",
-      "leftColor": "#555",
-      "rightColor": "#325e9d"
+      "icon": "../../../assets/images/logos/tools/word.png"
     },
     {
       "txt": "PowerPoint",
-      "icon": "../../../assets/images/knowledge/tools/pp.png",
-      "leftColor": "#555",
-      "rightColor": "#c85f16"
+      "icon": "../../../assets/images/logos/tools/pp.png"
     },
     {
       "txt": "Excel",
-      "icon": "../../../assets/images/knowledge/tools/excel.png",
-      "leftColor": "#555",
-      "rightColor": "#27570a"
+      "icon": "../../../assets/images/logos/tools/excel.png"
+    }
+  ],
+  "totalLang": [
+    {
+      "txt": "Java",
+      "icon": "../../../assets/images/logos/langs/java.png"
+    },
+    {
+      "txt": "Kotlin",
+      "icon": "../../../assets/images/logos/langs/kotlin.png"
+    },
+    {
+      "txt": "Markdown",
+      "icon": "../../../assets/images/logos/langs/md.png"
+    },
+    {
+      "txt": "LaTex",
+      "icon": "../../../assets/images/logos/langs/latex.png"
+    },
+    {
+      "txt": "MongoDB",
+      "icon": "../../../assets/images/logos/langs/mongodb.png"
     }
   ]
 }
