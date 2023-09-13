@@ -9,13 +9,58 @@
   align-items: center;
 }
 
+$height: 400px;
+
 .data {
   width: 60%;
+  height: calc($height + 12px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .picture {
   width: 40%;
   text-align: center;
+
+  .pict {
+    background-image: url("../../../assets/images/Orla.jpeg");
+    height: $height;
+    width: 300px;
+    animation: morph 10s ease-in-out infinite;
+    border: 2px solid $gray;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: $shadow-bot;
+  }
+}
+
+.flex {
+  align-items: center;
+  margin-bottom: 20px;
+  h2 {
+    font-size: 1.45rem;
+    width: 100px;
+  }
+  ul {
+    display: flex;
+    column-gap: 25px;
+    margin-left: 25px;
+    height: 30px;
+    li {
+      object-fit: contain;
+    }
+    .toptt img {
+      transition: $transition-3s;
+      width: 28px;
+      height: 28px;
+    }
+
+    .toptt:hover img {
+      width: 36px;
+      height: 36px;
+    }
+  }
 }
 
 h1 {
@@ -28,7 +73,7 @@ h1 {
   display: flex;
   align-items: center;
   height: 48px;
-  margin-top: 15px;
+  margin: 15px 0;
 }
 
 svg {
@@ -50,17 +95,6 @@ svg {
   }
 }
 
-.pict {
-  background-image: url("../../../assets/images/Orla.jpeg");
-  height: 400px;
-  width: 300px;
-  animation: morph 8s ease-in-out infinite;
-  border: 2px solid $gray;
-  border-radius: 10px;
-  object-fit: cover;
-  box-shadow: $shadow-bot;
-}
-
 @keyframes morph {
   0% {
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
@@ -71,4 +105,10 @@ svg {
   100% {
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
   }
+}
+
+img,
+svg,
+path {
+  z-index: -1;
 }

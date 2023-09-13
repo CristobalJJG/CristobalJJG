@@ -1,0 +1,25 @@
+<div class="relative">
+  <section class="relative">
+    <span class="bubble yl"></span>
+    <span class="bubble rd"></span>
+    <span class="bubble gr"></span>
+    <span class="bubble bl"></span>
+  </section>
+  <section class="container flex">
+    <article class="picture">
+      <img
+        loading="lazy"
+        src="../../../assets/images/eii.jpg"
+        alt="EII"
+        width="750px"
+      />
+    </article>
+    <article class="info flex">
+      <h2 [innerHTML]="'about.title' | translate | safeHtml"></h2>
+      <p [innerHTML]="'about.p1' | translate | safeHtml"></p>
+      <p [innerHTML]="'about.p2' | translate | safeHtml"></p>
+      <p [innerHTML]="'about.p3' | translate | safeHtml"></p>
+      <ul [innerHTML]="'about.list' | translate | safeHtml"></ul>
+    </article>
+  </section>
+</div>

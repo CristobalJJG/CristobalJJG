@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { SafeHtmlPipe } from 'src/pipes/safe-html.pipe';
 
 
 /* Importaciones para el traductor */
@@ -16,6 +17,7 @@ import { AppComponent } from './app.component';
 import { TooltipComponent } from './components/tooltip/tooltip.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ProfileComponent } from './components/profile/profile.component';
+import { AboutMeComponent } from './components/about-me/about-me.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -23,10 +25,12 @@ export function HttpLoaderFactory(http: HttpClient) {
 
 @NgModule({
   declarations: [
+    SafeHtmlPipe,
     AppComponent,
     TooltipComponent,
     HeaderComponent,
-    ProfileComponent
+    ProfileComponent,
+    AboutMeComponent
   ],
   imports: [
     BrowserModule,

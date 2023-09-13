@@ -5,11 +5,12 @@
     "studies": "Studies",
     "home": "Home"
   },
-  "side": {
-    "description": "I am a new <strong>Computer Engineer</strong> in the field. I love <strong>programming</strong> and <strong>customizing</strong> Operating Systems.",
-    "preferences": "Preferences",
-    "front": "Front-end",
-    "so": "Operating Systems"
+  "about": {
+    "title": "About me",
+    "p1": "<strong>Junior Programmer</strong> recently graduated from the University of Las Palmas de Gran Canaria.",
+    "p2": "I love <strong>Web development</strong>, as well as Computer Science in general terms.",
+    "p3": "Among my interests, they are:",
+    "list": "<li style='margin-left: 20px'> - <strong>Customization</strong> of Operating Systems </li> <li style='margin-left: 20px'>- <strong>Automating</strong> tasks</li> <li style='margin-left: 20px'>- Software programming</li> <li style='margin-left: 20px'>- Learning new technologies</li>"
   },
   "knowledge-desc": "<p>In this section I expose my preferences when developing code, among them:</p> <p style='margin-left: 10px; font-size: .9rem'> - <strong style='color:#d42e29'>Angular</strong> as a framework and <strong>TypeScript</strong> as a programming language.</br>- <strong>Figma</strong> and <strong>Photoshop</strong>, but I am open to learning or using any other tool.</br>- <strong style='color:#ee711a'>Ubuntu</strong>, as a Operating System, but I can adapt to any other operating system.",
   "study": "<div> La informática está en <strong>constante evolución</strong>, así como el desarrollo web, con la creación de Frameworks que aportan a los desarrolladores distintas capacidades: </div> <ul> <li> <img src='../../../assets/images/knowledge/logos/angular.png' alt='Angular' width='15px' /> <strong style='margin-left: 5px'>Angular</strong>: Personalmente, me gusta la idea de tener dividos los 3 ficheros fundamentales, así como tener bien divididas las distintas funcionalidades. Este Framework es muy amplio, y con muchas capacidades, entre ellas, me gustaría mejorar en: </li> <li> <ul> <li> <strong style='margin-left: 15px'>Pipes</strong>: Los Pipes en Angular son una forma de escribir transformaciones de datos de visualización que se pueden declarar en HTML. Un Pipe toma datos como entrada y transforma esos datos en una salida deseada. </li> <li> <strong style='margin-left: 15px'>Servicios</strong>: Un servicio en Angular es, de forma resumida, una clase con un propósito específico. Los servicios son un gran lugar para compartir métodos y datos entre componentes. Son decorados con @Injectable() para indicar que pueden ser inyectados en otras clases como dependencias. </li> </ul> </li> </ul>"

@@ -2,129 +2,129 @@
   "tagsFront": [
     {
       "txt": "Angular",
-      "icon": "../../../assets/images/logos/frameworks/Angular.png"
+      "icon": "../../../assets/images/nuevas/frameworks/Angular.png"
     },
     {
       "txt": "Ionic",
-      "icon": "../../../assets/images/logos/frameworks/Ionic.png"
+      "icon": "../../../assets/images/nuevas/frameworks/Ionic.png"
     },
     {
       "txt": "Kotlin",
-      "icon": "../../../assets/images/logos/frameworks/Android.png"
+      "icon": "../../../assets/images/nuevas/frameworks/Android.png"
     }
   ],
   "tagsBack": [
     {
       "txt": "ExpressJS",
-      "icon": "../../../assets/images/logos/frameworks/ExpressJS.png"
+      "icon": "../../../assets/images/nuevas/frameworks/ExpressJS.png"
     },
     {
       "txt": "DJango",
-      "icon": "../../../assets/images/logos/frameworks/django.png"
+      "icon": "../../../assets/images/nuevas/frameworks/django.png"
     }
   ],
   "tagsLang": [
     {
       "txt": "HTML",
-      "icon": "../../../assets/images/logos/langs/html.png"
+      "icon": "../../../assets/images/nuevas/langs/html.png"
     },
     {
       "txt": "JavaScript",
-      "icon": "../../../assets/images/logos/langs/JS.png"
+      "icon": "../../../assets/images/nuevas/langs/JS.png"
     },
     {
       "txt": "CSS",
-      "icon": "../../../assets/images/logos/langs/css.png"
+      "icon": "../../../assets/images/nuevas/langs/css.png"
     },
     {
       "txt": "SASS",
-      "icon": "../../../assets/images/logos/langs/sass.png"
+      "icon": "../../../assets/images/nuevas/langs/sass.png"
     },
     {
       "txt": "TypeScript",
-      "icon": "../../../assets/images/logos/langs/TS.png"
+      "icon": "../../../assets/images/nuevas/langs/TS.png"
     },
     {
       "txt": "Python",
-      "icon": "../../../assets/images/logos/langs/py.png"
+      "icon": "../../../assets/images/nuevas/langs/py.png"
     },
     {
       "txt": "Shell Script",
-      "icon": "../../../assets/images/logos/langs/sh.png"
+      "icon": "../../../assets/images/nuevas/langs/sh.png"
     }
   ],
   "tagsSO": [
     {
       "txt": "Ubuntu 22.04.3 LTS (Jammy Jellyfish)",
-      "icon": "../../../assets/images/logos/so/ubuntu.png"
+      "icon": "../../../assets/images/nuevas/so/ubuntu.png"
     },
     {
       "txt": "Windows 11",
-      "icon": "../../../assets/images/logos/so/windows.png"
+      "icon": "../../../assets/images/nuevas/so/windows.png"
     },
     {
       "txt": "Arch Linux",
-      "icon": "../../../assets/images/logos/so/arch.png"
+      "icon": "../../../assets/images/nuevas/so/arch.png"
     }
   ],
   "tagsTools": [
     {
       "txt": "Figma",
-      "icon": "../../../assets/images/logos/tools/figma.png"
+      "icon": "../../../assets/images/nuevas/tools/figma.png"
     },
     {
       "txt": "Photoshop",
-      "icon": "../../../assets/images/logos/tools/photoshop.png"
+      "icon": "../../../assets/images/nuevas/tools/photoshop.png"
     },
     {
       "txt": "Vercel",
-      "icon": "../../../assets/images/logos/tools/vercel.png"
+      "icon": "../../../assets/images/nuevas/tools/vercel.png"
     },
     {
       "txt": "Illustrator",
-      "icon": "../../../assets/images/logos/tools/illustrator.png"
+      "icon": "../../../assets/images/nuevas/tools/illustrator.png"
     },
     {
       "txt": "AWS",
-      "icon": "../../../assets/images/logos/tools/aws.png"
+      "icon": "../../../assets/images/nuevas/tools/aws.png"
     },
     {
       "txt": "Gimp",
-      "icon": "../../../assets/images/logos/tools/gimp.png"
+      "icon": "../../../assets/images/nuevas/tools/gimp.png"
     },
     {
       "txt": "Word",
-      "icon": "../../../assets/images/logos/tools/word.png"
+      "icon": "../../../assets/images/nuevas/tools/word.png"
     },
     {
       "txt": "PowerPoint",
-      "icon": "../../../assets/images/logos/tools/pp.png"
+      "icon": "../../../assets/images/nuevas/tools/pp.png"
     },
     {
       "txt": "Excel",
-      "icon": "../../../assets/images/logos/tools/excel.png"
+      "icon": "../../../assets/images/nuevas/tools/excel.png"
     }
   ],
   "totalLang": [
     {
       "txt": "Java",
-      "icon": "../../../assets/images/logos/langs/java.png"
+      "icon": "../../../assets/images/nuevas/langs/java.png"
     },
     {
       "txt": "Kotlin",
-      "icon": "../../../assets/images/logos/langs/kotlin.png"
+      "icon": "../../../assets/images/nuevas/langs/kotlin.png"
     },
     {
       "txt": "Markdown",
-      "icon": "../../../assets/images/logos/langs/md.png"
+      "icon": "../../../assets/images/nuevas/langs/md.png"
     },
     {
       "txt": "LaTex",
-      "icon": "../../../assets/images/logos/langs/latex.png"
+      "icon": "../../../assets/images/nuevas/langs/latex.png"
     },
     {
       "txt": "MongoDB",
-      "icon": "../../../assets/images/logos/langs/mongodb.png"
+      "icon": "../../../assets/images/nuevas/langs/mongodb.png"
     }
   ]
 }

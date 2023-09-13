@@ -6,25 +6,32 @@ $width: 75px;
   position: relative;
   .tt {
     width: $width;
-    padding: 5px 15px;
+    padding: 2.5px 10px;
     top: 2.5rem; //Bottom por defecto
     border-radius: 5px;
     left: calc(50% - $width - 10px);
     transition: $transition-2s;
     color: #fff0;
     text-align: center;
-    font-size: small;
+    font-size: smaller;
     background-color: rgba($dark-black, 0);
     position: absolute;
+    z-index: 13;
   }
 
-  &:hover .tt {
-    transition: $transition-4s;
-    top: 2.75rem; //Bottom por defecto
-    color: #fff;
-    background-color: $dark-black;
+  .logo {
+    left: -2rem;
   }
-}
 
-.tt.top {
+  &:hover {
+    .tt {
+      transition: $transition-4s;
+      top: 2.75rem; //Bottom por defecto
+      color: #fff;
+      background-color: $dark-black;
+    }
+    .logo {
+      top: 2.25rem;
+    }
+  }
 }
