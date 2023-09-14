@@ -1,15 +1,15 @@
 {
   "header": {
-    "resources": "Preferencias",
-    "so": "Sistemas Operativos",
-    "frameworks": "Frameworks",
-    "lang": "Lenguajes",
-    "tools": "Herramientas"
+    "resources": "Conocimientos",
+    "info": "Información",
+    "studies": "Estudios",
+    "home": "Inicio"
   },
-  "side": {
-    "description": "Soy un nuevo <strong>Ingeniero Informático</strong> en el sector. Me encanta la <strong>programación</strong> y la <strong>personalización</strong> de Sistemas Operativos.",
-    "preferences": "Preferencias",
-    "front": "Front-end",
-    "so": "Sistema Operativo"
+  "about": {
+    "title": "Sobre mí",
+    "p1": "<strong>Programador Junior</strong> recién titulado de la Universidad de Las Palmas de Gran Canaria.",
+    "p2": "Me encanta el <strong>desarrollo Web</strong>, así como la Informática en términos generales.",
+    "p3": "Entre mis gustos, se encuentran:",
+    "list": "<li style='margin-left: 20px'> - La <strong>personalización</strong> de Sistemas Operativos </li> <li style='margin-left: 20px'>- <strong>Automatizar</strong> tareas</li> <li style='margin-left: 20px'>- La programación software</li> <li style='margin-left: 20px'>- Aprender nuevas tecnologías</li>"
   }
 }

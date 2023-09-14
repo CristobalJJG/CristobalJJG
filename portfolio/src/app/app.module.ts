@@ -1,19 +1,23 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { SafeHtmlPipe } from 'src/pipes/safe-html.pipe';
+
+
+/* Importaciones para el traductor */
 import { HttpClient, HttpClientModule } from '@angular/common/http'
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core'
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { SideBarComponent } from './components/side-bar/side-bar.component';
-import { HeaderComponent } from './components/header/header.component';
-import { TagComponent } from './components/tag/tag.component';
-import { SoComponent } from './pages/so/so.page';
-import { FrameworksComponent } from './pages/frameworks/frameworks.page';
-import { LangComponent } from './pages/lang/lang.page';
-import { ToolsComponent } from './pages/tools/tools.page';
+
+/* Cosas de angular */
+import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
+
+/* Componentes */
+import { AppComponent } from './app.component';
+import { TooltipComponent } from './components/tooltip/tooltip.component';
+import { HeaderComponent } from './components/header/header.component';
+import { ProfileComponent } from './components/profile/profile.component';
+import { AboutMeComponent } from './components/about-me/about-me.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -21,20 +25,17 @@ export function HttpLoaderFactory(http: HttpClient) {
 
 @NgModule({
   declarations: [
+    SafeHtmlPipe,
     AppComponent,
-    SideBarComponent,
+    TooltipComponent,
     HeaderComponent,
-    TagComponent,
-    SoComponent,
-    FrameworksComponent,
-    LangComponent,
-    ToolsComponent
+    ProfileComponent,
+    AboutMeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
@@ -42,6 +43,7 @@ export function HttpLoaderFactory(http: HttpClient) {
         deps: [HttpClient]
       }
     }),
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

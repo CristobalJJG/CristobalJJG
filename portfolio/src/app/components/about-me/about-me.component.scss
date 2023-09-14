@@ -1,0 +1,142 @@
+@import "../../../styles.scss";
+
+$padding: 25px;
+$backdrop: blur(10px);
+.container {
+  background-color: rgba($gray, 0.25);
+  width: calc(90%);
+  box-shadow: $shadow-bot;
+  margin: 150px 3.5%;
+  padding: $padding;
+  border-radius: 10px;
+  backdrop-filter: $backdrop;
+  z-index: 50px;
+}
+
+.picture {
+  width: 50%;
+  img {
+    width: 100%;
+    border-radius: 5px;
+  }
+}
+
+.info {
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  padding: 50px;
+}
+
+div.relative {
+  position: relative;
+}
+
+.bubble {
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  z-index: -50;
+  aspect-ratio: 1;
+
+  &.yl {
+    width: 75px;
+    animation: movement1 linear 10s infinite;
+    background-color: $yellow;
+  }
+  &.rd {
+    background-color: $red;
+    width: 150px;
+    animation: movement2 linear 15s infinite;
+  }
+  &.gr {
+    background-color: $green;
+    width: 100px;
+    animation: movement3 linear 20s infinite;
+  }
+  &.bl {
+    background-color: $blue;
+    width: 50px;
+    animation: movement4 linear 10s infinite;
+  }
+}
+
+@keyframes movement1 {
+  0% {
+    top: 25px;
+    right: 25px;
+  }
+  25% {
+    top: 30px;
+    right: 90px;
+  }
+  50% {
+    top: 40px;
+    right: 65px;
+  }
+  100% {
+    top: 25px;
+    right: 25px;
+  }
+}
+
+@keyframes movement2 {
+  0% {
+    width: 175px;
+    top: 250px;
+    right: 275px;
+  }
+  25% {
+    width: 150px;
+    top: 240px;
+    right: 285px;
+  }
+  50% {
+    width: 165px;
+    top: 230px;
+    right: 270px;
+  }
+  100% {
+    width: 175px;
+    top: 250px;
+    right: 275px;
+  }
+}
+
+@keyframes movement3 {
+  0% {
+    top: 0px;
+    right: 500px;
+  }
+  25% {
+    top: 15px;
+    right: 510px;
+  }
+  50% {
+    top: -30px;
+    right: 540px;
+  }
+  100% {
+    top: 0px;
+    right: 500px;
+  }
+}
+
+@keyframes movement4 {
+  0% {
+    top: 350px;
+    right: 550px;
+  }
+  25% {
+    top: 360px;
+    right: 520px;
+  }
+  50% {
+    top: 330px;
+    right: 575px;
+  }
+  100% {
+    top: 350px;
+    right: 550px;
+  }
+}

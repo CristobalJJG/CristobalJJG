@@ -1,24 +1,25 @@
-@import '../styles.scss';
+@import "../styles.scss";
 
-$margin: 25px;
-
-.main-grid {
-    grid-template-columns: 1.5fr 5fr;
-    gap: 25px;
-    align-items: center;
-    margin: $margin;
-    height: calc(100vh - calc($margin * 2));
-    width: calc(100vw - calc($margin * 2));
+app-header {
+  position: fixed;
+  z-index: 13;
 }
 
-.side {
-    height: 100%;
+main {
+  position: relative;
 }
 
 .main {
-    border-radius: $container-border-radius;
-    height: 100%;
-    background: $gray;
-    background: $container-bg;
-    position: relative;
+  margin: 10px $left-right-margin;
+  width: calc(100% - ($left-right-margin * 2));
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile,
+.about-me {
+  width: 100%;
 }

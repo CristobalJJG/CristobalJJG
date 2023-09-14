@@ -1,0 +1,114 @@
+@import "../../../styles.scss";
+
+.container {
+  width: 70%;
+  margin: 0 15%;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+$height: 400px;
+
+.data {
+  width: 60%;
+  height: calc($height + 12px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.picture {
+  width: 40%;
+  text-align: center;
+
+  .pict {
+    background-image: url("../../../assets/images/Orla.jpeg");
+    height: $height;
+    width: 300px;
+    animation: morph 10s ease-in-out infinite;
+    border: 2px solid $gray;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: $shadow-bot;
+  }
+}
+
+.flex {
+  align-items: center;
+  margin-bottom: 20px;
+  h2 {
+    font-size: 1.45rem;
+    width: 100px;
+  }
+  ul {
+    display: flex;
+    column-gap: 25px;
+    margin-left: 25px;
+    height: 30px;
+    li {
+      object-fit: contain;
+    }
+    .toptt img {
+      transition: $transition-3s;
+      width: 28px;
+      height: 28px;
+    }
+
+    .toptt:hover img {
+      width: 36px;
+      height: 36px;
+    }
+  }
+}
+
+h1 {
+  font-size: 3rem !important;
+  text-align: justify;
+  margin-bottom: 25px;
+}
+
+.networks {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  margin: 15px 0;
+}
+
+svg {
+  filter: drop-shadow($d-shadow-bot);
+  transition: $transition-3s;
+
+  .svg {
+    height: 100%;
+    aspect-ratio: 1;
+    fill: white;
+    transition: $transition-3s;
+  }
+  &:hover {
+    filter: drop-shadow(0 10px 10px rgb(0, 0, 0));
+
+    .svg {
+      fill: $gray;
+    }
+  }
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+
+img,
+svg,
+path {
+  z-index: -1;
+}

@@ -1,4 +1,9 @@
-$shadow-bot: 0 10px 20px 5px rgba(black, .15);
-$shadow-top: 0 -10px 20px 5px rgba(black, .15);
-$shadow-left: 10px 0 20px 5px rgba(black, .15);
-$shadow-right: -10px 0 20px 5px rgba(black, .15);
+$shadow-bot: 0 10px 20px 5px rgb(0 0 0 / 0.3);
+$shadow-top: 0 -10px 20px 5px rgb(0 0 0/ 0.3);
+$shadow-left: 10px 0 20px 5px rgb(0 0 0/ 0.3);
+$shadow-right: -10px 0 20px 5px rgb(0 0 0/ 0.3);
+
+$d-shadow-bot: 0 5px 5px rgb(0, 0, 0);
+$d-shadow-top: 0 -5px 5px rgb(0, 0, 0);
+$d-shadow-left: -5px 0 5px rgb(0, 0, 0);
+$d-shadow-right: 5px 0 5px rgb(0, 0, 0);
