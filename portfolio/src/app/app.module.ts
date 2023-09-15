@@ -18,6 +18,8 @@ import { TooltipComponent } from './components/tooltip/tooltip.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
+import { PortfolioComponent } from './components/portfolio/portfolio.component';
+import { CardComponent } from './components/portfolio/card/card.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -30,7 +32,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     TooltipComponent,
     HeaderComponent,
     ProfileComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    PortfolioComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
