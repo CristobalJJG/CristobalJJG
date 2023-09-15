@@ -18,6 +18,8 @@ $backdrop: blur(10px);
   img {
     width: 100%;
     border-radius: 5px;
+    height: 100%;
+    object-fit: cover;
   }
 }
 
@@ -149,4 +151,29 @@ h1 {
 
 h2 {
   text-align: center;
+}
+
+/* menor a 1024px */
+@media (max-width: 900px) {
+  .flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  .info,
+  .picture {
+    width: 100%;
+  }
+
+  .info {
+    padding: 0;
+    align-items: normal;
+  }
+}
+
+/* menor a 768px */
+@media only screen and (max-width: 768px) {
+}
+
+/* menor a 768px */
+@media only screen and (max-width: 500px) {
 }
