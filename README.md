@@ -1,5 +1,3 @@
-![Banner](./assets/Banner%20CristobalJJG.png)
-
 # README de CristobalJJG
 
 ## ¡Hola! 👋🏻
@@ -28,9 +26,7 @@ También tengo ganas de formarme de una forma más profesional sobre:
 
 No solo me interesa el desarrollo de software, también la personalización de diversos Sistemas Operativos, como pueden ser:
 
-![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&labelColor=gray&label=SO&color=orange) ![Fedora](https://img.shields.io/badge/Fedora-294172?style=for-the-badge&logo=fedora&labelColor=gray&label=SO) ![Pop!_OS](https://img.shields.io/badge/Pop!_OS-48B9C7?style=for-the-badge&logo=Pop!_OS&labelColor=gray&label=SO) ![Zorin OS](https://img.shields.io/badge/-Zorin%20OS-%2310AAEB?style=for-the-badge&logo=zorin&labelColor=gray&label=SO)
-
-![Windows 10](https://img.shields.io/badge/Windows%2010-%230079d5.svg?style=for-the-badge&logo=Windows%2010&labelColor=gray&label=SO&) ![Windows 11](https://img.shields.io/badge/Windows%2011-%230079d5.svg?style=for-the-badge&logo=Windows%2011&labelColor=gray&label=SO)
+![Arch](https://img.shields.io/badge/Arch_Linux-1793D1?style=for-the-badge&logo=arch-linux&labelColor=gray&label=SO&logoColor=white) ![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&labelColor=gray&label=SO&color=orange) ![Windows 11](https://img.shields.io/badge/Windows%2011-%230079d5.svg?style=for-the-badge&logo=Windows%2011&labelColor=gray&label=SO)
 
 ## Proyectos Destacados
 
