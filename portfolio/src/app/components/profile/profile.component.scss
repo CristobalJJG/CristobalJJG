@@ -113,10 +113,6 @@ path {
   z-index: -1;
 }
 
-/* menor a 1440px */
-@media only screen and (max-width: 1440px) {
-}
-
 /* menor a 1024px */
 @media (max-width: 1024px) {
   .flex {
@@ -194,5 +190,9 @@ path {
         }
       }
     }
+  }
+
+  .picture {
+    width: 100%;
   }
 }
