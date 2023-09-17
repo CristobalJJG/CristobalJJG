@@ -164,6 +164,7 @@ path {
   .container {
     overflow-x: hidden;
     overflow-y: auto;
+    padding-bottom: 200px;
   }
   .data {
     h1 {
@@ -185,7 +186,7 @@ path {
           margin-bottom: 50px;
           ul {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
           }
         }
       }

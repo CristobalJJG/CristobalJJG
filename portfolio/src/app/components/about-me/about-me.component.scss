@@ -176,4 +176,7 @@ h2 {
 
 /* menor a 768px */
 @media only screen and (max-width: 500px) {
+  .container {
+    margin: 100px 3.5%;
+  }
 }
