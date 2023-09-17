@@ -12,5 +12,15 @@
     "p2": "Me encanta el <strong>desarrollo Web</strong>, así como la Informática en términos generales.",
     "p3": "Entre mis gustos, se encuentran:",
     "list": "<li style='margin-left: 20px'> - La <strong>personalización</strong> de Sistemas Operativos </li> <li style='margin-left: 20px'>- <strong>Automatizar</strong> tareas</li> <li style='margin-left: 20px'>- La programación software</li> <li style='margin-left: 20px'>- Aprender nuevas tecnologías</li>"
+  },
+  "portfolio": {
+    "tft": {
+      "title": "TFT-Galería de NFTs dentro de la Web 3.0",
+      "description": "Esta aplicación web fue mi Trabajo de Fin de Título del Grado de Ingeniería Informata en la ULPGC. Esta consta de una Galería de NFTs que hace uso de los Smart Contracts. Además, aporta un nexo de unión entre distintas criptocarteras que se encuentren dentro de la red Ethereum."
+    },
+    "homethings": {
+      "title": "Home-Things",
+      "description": "Esta aplicación es mi primer desarrollo híbrido, con la intención de tener las listas básicas para poder controlar los alimentos, productos de limpiezas y de más elementos necesarios para el día a día."
+    }
   }
 }

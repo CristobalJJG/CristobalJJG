@@ -1,1 +1,6 @@
-<p>card works!</p>
+<div class="card grid" *ngIf="portfolio; else blank">
+  <div><img src="{{ portfolio.picture }}" alt="" /></div>
+  {{ portfolio.name | translate }}
+</div>
+
+<ng-template #blank> </ng-template>
