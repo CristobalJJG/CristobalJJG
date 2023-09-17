@@ -2,6 +2,7 @@
 
 app-header {
   position: fixed;
+  width: 100%;
   z-index: 13;
 }
 
@@ -22,4 +23,19 @@ main {
 .profile,
 .about-me {
   width: 100%;
+}
+/* menor a 768px */
+@media only screen and (max-width: 768px) {
+  .main {
+    margin: 10px 0;
+    padding-top: 125px;
+  }
+  .main {
+    width: 98%;
+    overflow-x: hidden;
+  }
+}
+
+/* menor a 768px */
+@media only screen and (max-width: 500px) {
 }

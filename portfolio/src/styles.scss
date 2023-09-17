@@ -11,6 +11,7 @@
 * {
   margin: 0;
   padding: 0;
+  transition: $transition-3s;
 
   &::-webkit-scrollbar {
     width: 8px;

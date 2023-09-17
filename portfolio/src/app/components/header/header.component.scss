@@ -3,6 +3,7 @@
 $bg: rgba($gray, 0.25);
 
 header {
+  width: calc(100% - $left-right-margin * 2);
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -16,7 +17,7 @@ header {
   box-shadow: $shadow-bot;
 }
 
-$less-margin: -200px;
+$less-margin: -75px;
 #title {
   margin-left: $less-margin;
 }
@@ -27,7 +28,7 @@ $less-margin: -200px;
 
 select {
   width: 125px;
-  margin-right: calc($less-margin - 125px);
+  margin-right: calc($less-margin * 2);
 
   option:hover {
     background-color: rgba($gray, 0.8);
@@ -36,7 +37,7 @@ select {
 
 .container {
   position: relative;
-  width: 200px;
+  width: 100px;
   text-align: center;
 
   p,
@@ -101,5 +102,81 @@ select {
         width: 100%;
       }
     }
+  }
+}
+
+/* menor a 1440px */
+@media only screen and (max-width: 1440px) {
+  $less-margin: 25px;
+
+  #title {
+    margin-left: $less-margin;
+  }
+
+  .container {
+    width: 50px;
+  }
+  select {
+    margin-left: calc($less-margin);
+  }
+}
+
+/* menor a 1024px */
+@media only screen and (max-width: 1024px) {
+  $less-margin: 250px;
+
+  #title {
+    margin-left: 25px;
+  }
+
+  select {
+    margin-left: 0;
+    margin-right: 0;
+    width: auto;
+  }
+}
+
+/* menor a 768px */
+@media only screen and (max-width: 768px) {
+  $left-right-margin: 2%;
+  header {
+    width: calc(100% - $left-right-margin * 2);
+    margin: 5px $left-right-margin;
+    height: 78px;
+  }
+
+  #title {
+    margin-right: 0;
+  }
+
+  select {
+    margin-right: 0;
+    margin-left: calc($left-right-margin + 25px);
+    width: auto;
+  }
+}
+
+/* menor a 768px */
+@media only screen and (max-width: 500px) {
+  header {
+    height: 96px;
+  }
+
+  .container {
+    width: 0;
+  }
+
+  #title {
+    margin-right: 0;
+    h1 {
+      font-size: small;
+    }
+  }
+
+  select {
+    margin-right: 25px;
+    margin-left: 0;
+    height: 60%;
+    width: 100px;
   }
 }
