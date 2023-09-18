@@ -1,6 +1,38 @@
 <div class="card grid" *ngIf="portfolio; else blank">
-  <div><img src="{{ portfolio.picture }}" alt="" /></div>
-  {{ portfolio.name | translate }}
+  <div>
+    <img src="{{ portfolio.picture }}" alt="{{ portfolio.name | translate }}" />
+  </div>
+  <div class="flex col">
+    <h1>{{ portfolio.name | translate }}</h1>
+    <p>{{ portfolio.description | translate }}</p>
+    <section class="full">
+      <article class="flex icon">
+        <span class="techs">Techs &nbsp;&nbsp;&nbsp;|</span>
+        <ul>
+          <li *ngFor="let t of portfolio.tags" class="toptt">
+            <img
+              loading="lazy"
+              src="{{ t.icon }}"
+              alt="{{ t.txt }}"
+              width="48px"
+              height="48px"
+            />
+            <app-tooltip
+              [sentence]="t.txt"
+              class="tt logo"
+              style="font-size: small"
+            ></app-tooltip>
+          </li>
+        </ul>
+      </article>
+      <article class="flex line">
+        <a href="{{ portfolio.github }}" rel="noopener" target="_blank"
+          >Github</a
+        >
+        <a href="{{ portfolio.page }}" rel="noopener" target="_blank">Página</a>
+      </article>
+    </section>
+  </div>
 </div>
 
 <ng-template #blank> </ng-template>
