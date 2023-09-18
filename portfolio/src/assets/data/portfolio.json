@@ -1,0 +1,50 @@
+{
+  "portfolio": [
+    {
+      "picture": "../../assets/images/portfolio/TFT/inicio.png",
+      "name": "portfolio.tft.title",
+      "description": "portfolio.tft.description",
+      "github": "https://github.com/CristobalJJG/TFT-GaleriaNFTWeb3",
+      "page": "https://tft.cristobaljjg.com/home",
+      "tags": [
+        {
+          "txt": "Angular",
+          "icon": "../../../assets/images/nuevas/frameworks/Angular.png"
+        },
+        {
+          "txt": "ExpressJS",
+          "icon": "../../../assets/images/nuevas/frameworks/ExpressJS.png"
+        },
+        {
+          "txt": "SASS",
+          "icon": "../../../assets/images/nuevas/langs/sass.png"
+        },
+        {
+          "txt": "TypeScript",
+          "icon": "../../../assets/images/nuevas/langs/TS.png"
+        }
+      ]
+    },
+    {
+      "picture": "../../assets/images/portfolio/home/food-desktop.png",
+      "name": "portfolio.homethings.title",
+      "description": "portfolio.homethings.description",
+      "github": "https://github.com/CristobalJJG/home-things",
+      "page": "https://home-things.cristobaljjg.com/tabs/tab3",
+      "tags": [
+        {
+          "txt": "Ionic",
+          "icon": "../../../assets/images/nuevas/frameworks/Ionic.png"
+        },
+        {
+          "txt": "SASS",
+          "icon": "../../../assets/images/nuevas/langs/sass.png"
+        },
+        {
+          "txt": "TypeScript",
+          "icon": "../../../assets/images/nuevas/langs/TS.png"
+        }
+      ]
+    }
+  ]
+}

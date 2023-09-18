@@ -1,0 +1,90 @@
+@import "../../../../styles.scss";
+$bg: rgba($gray, 0.25);
+
+.card {
+  width: 80%;
+  padding: 40px 35px;
+  background-color: $bg;
+  box-shadow: $shadow-bot;
+  border-radius: 10px;
+  margin: 25px calc(10% - 35px);
+}
+
+.grid {
+  grid-template-columns: 2fr 3fr;
+  align-items: center;
+}
+
+.full {
+  width: 100%;
+}
+
+.flex {
+  &.col {
+    flex-direction: column;
+    align-items: center;
+  }
+  &.line {
+    justify-content: space-between;
+    a {
+      margin: 0 50px;
+
+      &:hover,
+      &:visited {
+        cursor: pointer;
+        color: rgba($white, 0.8);
+      }
+      &:active {
+        color: rgba($white, 0.5);
+      }
+    }
+  }
+  &.icon {
+    margin: 20px 50px;
+    align-items: center;
+  }
+}
+
+p {
+  font-weight: 500;
+}
+
+img {
+  width: 100%;
+  border-radius: 5px;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+h1 {
+  margin-bottom: 25px;
+}
+
+.techs {
+  font-size: 1.45rem;
+}
+
+ul {
+  display: flex;
+  column-gap: 25px;
+  margin-left: 25px;
+  height: 30px;
+  li {
+    object-fit: contain;
+  }
+  .toptt img {
+    transition: $transition-3s;
+    width: 28px;
+    height: 28px;
+  }
+
+  .toptt:hover img {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+p {
+  font-size: 1.1rem;
+  padding: 10px 50px;
+}
