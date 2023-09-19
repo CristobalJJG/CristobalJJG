@@ -4,7 +4,12 @@ import { Portfolio } from 'src/class/portfolio';
 
 @Component({
   selector: 'app-portfolio',
-  templateUrl: './portfolio.component.html',
+  template: `
+    <h1>Portfolio</h1>
+    <h2 class="flex">
+      <app-card *ngFor="let p of data" [portfolio]="p"></app-card>
+    </h2>
+  `,
   styleUrls: ['./portfolio.component.scss']
 })
 export class PortfolioComponent implements OnInit{
