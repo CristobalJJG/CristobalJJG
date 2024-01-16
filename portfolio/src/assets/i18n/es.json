@@ -21,6 +21,10 @@
     "homethings": {
       "title": "Home-Things",
       "description": "Esta aplicación es mi primer desarrollo híbrido, con la intención de tener las listas básicas para poder controlar los alimentos, productos de limpiezas y de más elementos necesarios para el día a día."
+    },
+    "documentation": {
+      "title": "Documentación",
+      "description": "Esta página se hizo con la intención de aprender a documentar información. En este caso, la iniciación a varias librerías que son bastante útiles para el día a día, como son la propia Docsify para crear documentación, o Concurrently, una librería que nos proporciona procesos concurrentes en node."
     }
   }
 }

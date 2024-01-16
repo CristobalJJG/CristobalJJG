@@ -21,6 +21,10 @@
     "homethings": {
       "title": "Home-Things",
       "description": "This application is my first hybrid development, with the intention of having basic lists to be able to control food, cleaning products and other necessary elements for day-to-day life."
+    },
+    "documentation": {
+      "title": "Documentation",
+      "description": "This page was made with the intention of learning to document information. In this case, the initiation to several libraries that are quite useful for day-to-day, such as Docsify itself to create documentation, or Concurrently, a library that provides us with concurrent processes in node."
     }
   }
 }
