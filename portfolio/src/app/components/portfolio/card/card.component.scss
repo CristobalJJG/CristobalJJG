@@ -24,8 +24,10 @@ $bg: rgba($gray, 0.25);
     flex-direction: column;
     align-items: center;
   }
+
   &.line {
     justify-content: flex-end;
+
     a {
       margin: 0 10px;
 
@@ -34,11 +36,13 @@ $bg: rgba($gray, 0.25);
         cursor: pointer;
         color: rgba($white, 0.8);
       }
+
       &:active {
         color: rgba($white, 0.5);
       }
     }
   }
+
   &.icon {
     margin: 20px 50px;
     align-items: center;
@@ -46,7 +50,7 @@ $bg: rgba($gray, 0.25);
 }
 
 p {
-  font-weight: 500;
+  font-weight: 300;
 }
 
 .img {
@@ -69,9 +73,11 @@ ul {
   column-gap: 25px;
   margin-left: 25px;
   height: 30px;
+
   li {
     object-fit: contain;
   }
+
   .toptt img {
     transition: $transition-3s;
     width: 28px;
@@ -93,6 +99,7 @@ p {
   &.large {
     display: none;
   }
+
   &.tiny {
     display: block;
   }
@@ -104,10 +111,12 @@ p {
     display: flex;
     flex-direction: column;
   }
+
   h1 {
     font-size: 32px !important;
     margin: 20px 0;
   }
+
   p {
     padding: 10px 10px;
   }
@@ -123,11 +132,13 @@ p {
   .svg {
     &.large {
       display: block;
+
       a {
         display: grid;
         place-items: center;
       }
     }
+
     &.tiny {
       display: none;
     }
