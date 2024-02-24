@@ -5,10 +5,9 @@ $bg: rgba($gray, 0.25);
 header {
   width: calc(100% - $left-right-margin * 2);
   position: relative;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
   align-items: center;
-  justify-items: center;
+  justify-content: space-between;
   margin: 5px $left-right-margin;
   background-color: $bg;
   border-radius: 10px;
@@ -17,121 +16,43 @@ header {
   box-shadow: $shadow-bot;
 }
 
-$less-margin: -75px;
-#title {
-  margin-left: $less-margin;
-}
+$m: 75px;
 
-.flex {
-  justify-content: center;
+#title {
+  margin-left: $m;
 }
 
 select {
   width: 125px;
-  margin-right: calc($less-margin * 2);
+  margin-right: calc($m * 2);
 
   option:hover {
     background-color: rgba($gray, 0.8);
   }
 }
 
-.container {
-  position: relative;
-  width: 100px;
-  text-align: center;
-
-  p,
-  li {
-    font-weight: 600;
-    transition: $transition-4s;
-    color: $white;
-    padding: 15px;
-  }
-
-  p {
-    font-size: 1.25rem;
-
-    &::after {
-      margin-left: auto;
-    }
-
-    &::after,
-    &::before {
-      content: "";
-      width: 0%;
-      height: 2px;
-      background: $white;
-      display: block;
-      transition: $transition-4s;
-    }
-  }
-
-  li {
-    font-weight: 500;
-    text-align: center;
-    border-bottom: 1px solid $black;
-
-    &:hover {
-      background-color: rgba($gray, 0.8);
-      border-radius: 5px;
-      cursor: pointer;
-    }
-  }
-
-  .content {
-    /* display: none; */
-    transition: $transition-1s;
-    width: 100%;
-    z-index: -100;
-    background-color: $dark-gray;
-    box-shadow: $shadow-bot;
-    border-radius: 5px;
-    position: absolute;
-    flex-direction: column;
-  }
-
-  &:hover {
-    .content {
-      display: flex;
-      z-index: 5;
-    }
-
-    p {
-      &::after,
-      &::before {
-        width: 100%;
-      }
-    }
-  }
-}
-
 /* menor a 1440px */
 @media only screen and (max-width: 1440px) {
-  $less-margin: 25px;
+  $m: 25px;
 
   #title {
-    margin-left: $less-margin;
+    margin-left: $m;
   }
 
-  .container {
-    width: 50px;
-  }
   select {
-    margin-left: calc($less-margin);
+    margin-left: calc($m);
   }
 }
 
 /* menor a 1024px */
 @media only screen and (max-width: 1024px) {
-  $less-margin: 250px;
-
   #title {
     margin-left: 25px;
   }
 
   select {
     margin-left: 0;
-    margin-right: 0;
+    margin-right: 25px;
     width: auto;
   }
 }
@@ -139,6 +60,7 @@ select {
 /* menor a 768px */
 @media only screen and (max-width: 768px) {
   $left-right-margin: 2%;
+
   header {
     width: calc(100% - $left-right-margin * 2);
     margin: 5px $left-right-margin;
@@ -148,28 +70,19 @@ select {
   #title {
     margin-right: 0;
   }
-
-  select {
-    margin-right: 0;
-    margin-left: calc($left-right-margin + 25px);
-    width: auto;
-  }
 }
 
 /* menor a 768px */
 @media only screen and (max-width: 500px) {
   header {
-    height: 96px;
-  }
-
-  .container {
-    width: 0;
+    height: 70px;
   }
 
   #title {
     margin-right: 0;
-    h1 {
-      font-size: small;
+
+    h2 {
+      font-size: 1.5rem !important;
     }
   }
 

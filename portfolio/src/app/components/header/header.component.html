@@ -1,45 +1,12 @@
 <header>
   <div id="title" class="toptt">
-    <h1 class="click" routerLink="/" routerLinkActive="activebutton">
+    <h2 class="click" routerLink="['portfolio']" style="font-size: 2.5rem;">
       CristobalJJG.com
-    </h1>
-    <app-tooltip
-      [sentence]="'header.home' | translate"
-      class="tt"
-    ></app-tooltip>
+    </h2>
+    <app-tooltip [sentence]="'header.home' | translate" class="tt"></app-tooltip>
   </div>
 
-  <div class="flex">
-    <div class="container">
-      <!-- <p
-        class="click"
-        routerLink="/{{ 'header.resources' | translate }}"
-        routerLinkActive="activebutton"
-      >
-        {{ "header.resources" | translate }}
-      </p> -->
-    </div>
-    <div class="container">
-      <!-- <p class="click" routerLink="/studies" routerLinkActive="activebutton">
-        {{ "header.studies" | translate }}
-      </p> -->
-    </div>
-    <div class="container">
-      <!-- <p
-        class="click"
-        routerLink="/information"
-        routerLinkActive="activebutton"
-      >
-        {{ "header.info" | translate }}
-      </p> -->
-    </div>
-  </div>
-  <select
-    name="languages"
-    id="lang"
-    [(ngModel)]="selected"
-    (change)="doTranslate(selected)"
-  >
+  <select name="languages" id="lang" [(ngModel)]="selected" (change)="doTranslate(selected)">
     <option value="es">es-Es</option>
     <option value="en">en-En</option>
   </select>

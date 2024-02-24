@@ -51,6 +51,8 @@ $bg: rgba($gray, 0.25);
 
 p {
   font-weight: 300;
+  font-size: 1.1rem;
+  padding: 10px 50px;
 }
 
 .img {
@@ -88,11 +90,6 @@ ul {
     width: 36px;
     height: 36px;
   }
-}
-
-p {
-  font-size: 1.1rem;
-  padding: 10px 50px;
 }
 
 .svg {

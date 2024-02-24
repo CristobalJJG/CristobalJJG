@@ -2,6 +2,7 @@
 
 $padding: 25px;
 $backdrop: blur(10px);
+
 .container {
   background-color: rgba($gray, 0.25);
   width: calc(90%);
@@ -15,6 +16,7 @@ $backdrop: blur(10px);
 
 .picture {
   width: 50%;
+
   img {
     width: 100%;
     border-radius: 5px;
@@ -46,16 +48,19 @@ div.relative {
     animation: movement1 linear 10s infinite;
     background-color: $yellow;
   }
+
   &.rd {
     background-color: $red;
     width: 150px;
     animation: movement2 linear 15s infinite;
   }
+
   &.gr {
     background-color: $green;
     width: 100px;
     animation: movement3 linear 20s infinite;
   }
+
   &.bl {
     background-color: $blue;
     width: 50px;
@@ -68,14 +73,17 @@ div.relative {
     top: 25px;
     right: 25px;
   }
+
   25% {
     top: 30px;
     right: 90px;
   }
+
   50% {
     top: 40px;
     right: 65px;
   }
+
   100% {
     top: 25px;
     right: 25px;
@@ -88,16 +96,19 @@ div.relative {
     top: 250px;
     right: 275px;
   }
+
   25% {
     width: 150px;
     top: 240px;
     right: 285px;
   }
+
   50% {
     width: 165px;
     top: 230px;
     right: 270px;
   }
+
   100% {
     width: 175px;
     top: 250px;
@@ -110,14 +121,17 @@ div.relative {
     top: 0px;
     right: 500px;
   }
+
   25% {
     top: 15px;
     right: 510px;
   }
+
   50% {
     top: -30px;
     right: 540px;
   }
+
   100% {
     top: 0px;
     right: 500px;
@@ -129,14 +143,17 @@ div.relative {
     top: 350px;
     right: 550px;
   }
+
   25% {
     top: 360px;
     right: 520px;
   }
+
   50% {
     top: 330px;
     right: 575px;
   }
+
   100% {
     top: 350px;
     right: 550px;
@@ -159,6 +176,7 @@ h2 {
     flex-direction: column;
     align-items: center;
   }
+
   .info,
   .picture {
     width: 100%;
@@ -168,10 +186,6 @@ h2 {
     padding: 0;
     align-items: normal;
   }
-}
-
-/* menor a 768px */
-@media only screen and (max-width: 768px) {
 }
 
 /* menor a 768px */
