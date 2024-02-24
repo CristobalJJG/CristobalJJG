@@ -11,6 +11,10 @@
     {
       "txt": "Kotlin",
       "icon": "../../../assets/images/nuevas/frameworks/Android.png"
+    },
+    {
+      "txt": "Astro",
+      "icon": "../../../assets/images/nuevas/frameworks/astro.png"
     }
   ],
   "tagsBack": [
