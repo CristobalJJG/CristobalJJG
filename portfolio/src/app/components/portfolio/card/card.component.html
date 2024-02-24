@@ -1,6 +1,7 @@
 <div class="card grid" *ngIf="portfolio; else blank">
   <div>
-    <img class="img" src="{{ portfolio.picture }}" alt="{{ portfolio.name + '' | translate }}" />
+    <img class="img" src="{{ portfolio.picture }}" alt="{{ portfolio.name + '' | translate }}" width="380" height="280"
+      loading="lazy" />
   </div>
   <div class="flex col">
     <h3>{{ portfolio.name + "" | translate }}</h3>

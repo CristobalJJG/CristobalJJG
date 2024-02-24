@@ -6,7 +6,7 @@
     <app-tooltip [sentence]="'header.home' | translate" class="tt"></app-tooltip>
   </div>
 
-  <select name="languages" id="lang" [(ngModel)]="selected" (change)="doTranslate(selected)">
+  <select name="languages" id="lang" [(ngModel)]="selected" (change)="doTranslate(selected)" aria-label="Idioma">
     <option value="es">es-Es</option>
     <option value="en">en-En</option>
   </select>
