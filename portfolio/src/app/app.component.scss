@@ -24,18 +24,47 @@ main {
 .about-me {
   width: 100%;
 }
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  * {
+    margin: 0 10px;
+  }
+}
+
+h2 {
+  border-top: 5px solid rgba(#000, 0);
+  border-bottom: 5px solid rgba(#000, 0);
+  padding: 5px 30px;
+
+  &:hover {
+    border-top: 5px solid rgba(#333, .8);
+    border-bottom: 5px solid rgba(#333, .8);
+  }
+
+  &.active {
+    border-top: 5px solid $white;
+    border-bottom: 5px solid $white;
+
+    &:hover {
+      border-top: 5px solid rgba(#DDD, .8);
+      border-bottom: 5px solid rgba(#DDD, .8);
+    }
+  }
+}
+
 /* menor a 768px */
 @media only screen and (max-width: 768px) {
   .main {
     margin: 10px 0;
     padding-top: 125px;
   }
+
   .main {
     width: 98%;
     overflow-x: hidden;
   }
-}
-
-/* menor a 768px */
-@media only screen and (max-width: 500px) {
 }
