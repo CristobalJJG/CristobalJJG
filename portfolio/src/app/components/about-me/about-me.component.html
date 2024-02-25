@@ -7,7 +7,7 @@
   </section>
   <section class="container flex">
     <article class="picture">
-      <img
+      <img loading="lazy" src="../../../assets/images/eii.jpg" alt="EII" width="750px" />
         loading="lazy"
         src="../../../assets/images/eii.jpg"
         alt="EII"
@@ -20,6 +20,26 @@
       <p [innerHTML]="'about.p2' | translate | safeHtml"></p>
       <p [innerHTML]="'about.p3' | translate | safeHtml"></p>
       <ul [innerHTML]="'about.list' | translate | safeHtml"></ul>
+    </article>
+  </section>
+
+  <section class="container">
+    <article>
+      <h1 [innerHTML]="'mInfo.title' | translate | safeHtml"></h1>
+
+      <!-- AWS y OCI -->
+      <p [innerHTML]="'mInfo.p1' | translate | safeHtml" class="pre"></p>
+
+      <!-- Primera fila -->
+      <section class="flex cont">
+        <!-- AWS -->
+        <article class="flex sect" [innerHTML]="'mInfo.aws' | translate | safeHtml"></article>
+        <!-- OCI -->
+        <article class="flex sect" [innerHTML]="'mInfo.oci' | translate | safeHtml"></article>
+      </section>
+
+      <hr>
+      <section class="flex cont">
     </article>
   </section>
 </div>

@@ -84,3 +84,18 @@ li {
 .click {
   cursor: pointer;
 }
+
+$border: 2px solid $white;
+
+a {
+  color: rgba($white, .95);
+  border: 2px solid transparent;
+  border-bottom: $border;
+  padding: 1px;
+
+  &:hover {
+    color: rgba($white, .8);
+    border: $border;
+    border-radius: 4px;
+  }
+}

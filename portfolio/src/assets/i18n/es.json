@@ -13,6 +13,10 @@
     "p3": "Entre mis gustos, se encuentran:",
     "list": "<li style='margin-left: 20px'> - La <strong>personalización</strong> de Sistemas Operativos </li> <li style='margin-left: 20px'>- <strong>Automatizar</strong> tareas</li> <li style='margin-left: 20px'>- La programación software</li> <li style='margin-left: 20px'>- Aprender nuevas tecnologías</li>"
   },
+    "title": "<h1>Más información</h1>",
+    "p1": "<p>He hecho uso de <strong><a href='https://aws.amazon.com/es/?nc2=h_lg' target='_blank' rel='noopener norefereer'>AWS</a> (Amazon Web Service)</strong> y <strong><a href='https://www.oracle.com/es/cloud/' target='_blank' rel='noopener norefereer'>OCI</a> (Oracle Cloud Infraestructure)</strong> para la creación de instancias en la nube.</p>",
+    "aws": "<img src='../../../assets/images/masInfo/aws.webp' alt='AWS' width='100px' height='100px'><p><strong>AWS</strong> fue usado con la intención de <strong>desplegar y mantener una página web</strong>, por lo tanto hice uso de algunas de las herramientas que nos proporciona para esto, como pueden ser <strong>EC2, S3, Route53</strong>, entre otros.</p>",
+    "oci": "<img src='../../../assets/images/masInfo/oci.svg' alt='OCI' width='80px' height='80px'> <p><strong>OCI</strong> proporcionaba una instancia con <strong>24GB de RAM</strong>, por lo que lo usé para tener un <strong>servidor de un videojuego</strong>, con todo lo que esto conlleva.</p>",
   "portfolio": {
     "tft": {
       "title": "TFT-Galería de NFTs dentro de la Web 3.0",
