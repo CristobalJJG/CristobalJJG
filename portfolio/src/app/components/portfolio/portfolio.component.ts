@@ -5,6 +5,8 @@ import { Portfolio } from 'src/class/portfolio';
 @Component({
   selector: 'app-portfolio',
   template: `
+    <app-about-me class="about-me"></app-about-me>
+
     <h2 class="flex">
       <app-card *ngFor="let p of data" [portfolio]="p"></app-card>
     </h2>

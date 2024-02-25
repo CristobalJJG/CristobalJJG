@@ -1,0 +1,47 @@
+@import "../../../styles.scss";
+
+.grid {
+    display: grid;
+    grid-template-columns: .5fr 2fr;
+}
+
+.container {
+    width: 1600px;
+    min-height: 600px;
+    margin-top: 128px;
+}
+
+$bg: rgba($gray, 0.25);
+
+.components {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: $bg;
+    box-shadow: $shadow-bot;
+    border-radius: 10px 0 0 10px;
+}
+
+.line {
+    padding: 5px 10px;
+
+    &:hover {
+        cursor: pointer;
+        background-color: rgba($white, 0.1);
+    }
+
+    &.activated {
+        background-color: rgba($white, 0.2);
+        font-weight: bold;
+    }
+}
+
+.object {
+    width: 100%;
+    height: 100%;
+    border-radius: 0 10px 10px 0;
+    display: grid;
+    place-items: center;
+    background-color: rgba($bg, .4);
+}
