@@ -68,7 +68,13 @@ div.relative {
   }
 }
 
+.grid {
+  display: grid;
+  place-items: center;
+}
+
 .flex {
+  justify-items: center;
 
   &.sect {
     align-items: center;
@@ -90,6 +96,12 @@ p {
 
 img {
   border-radius: 10px;
+
+  .bigger {
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
 }
 
 @keyframes movement1 {

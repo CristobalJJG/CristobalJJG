@@ -1,0 +1,29 @@
+@import '../../../styles.scss';
+
+.center {
+    text-align: center;
+}
+
+$gap: 15px;
+
+section,
+.grid {
+    display: grid;
+    place-items: center;
+    gap: $gap;
+}
+
+.grid {
+    margin: 30px 3.5%;
+}
+
+
+section {
+    &.c2 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    &.c3 {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

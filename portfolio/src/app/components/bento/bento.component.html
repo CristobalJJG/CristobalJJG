@@ -1,0 +1,56 @@
+<h1 class="center" [innerHTML]="'mInfo.title' | translate | safeHtml"></h1>
+<div class="grid">
+    <section class="c2">
+
+        <!-- AWS -->
+        <article>
+            <bento-card [imgSource]="'../../../../assets/images/masInfo/aws.png'" [alt]="'awsIcon'">
+                <span [innerHTML]="'mInfo.aws' | translate | safeHtml"></span>
+            </bento-card>
+        </article>
+
+        <!-- OCI -->
+        <article>
+            <bento-card [imgSource]="'../../../../assets/images/masInfo/oci.svg'" [alt]="'ociIcon'">
+                <article [innerHTML]="'mInfo.oci' | translate | safeHtml"></article>
+            </bento-card>
+        </article>
+    </section>
+    <!-- Segunda fila -->
+    <section class="c3">
+        <!-- PrimeNG -->
+        <article>
+            <bento-card
+                [imgSource]="'https://www.primefaces.org/primeng-v14-lts/assets/showcase/images/primeng-logo-light.svg'"
+                [alt]="'primengIcon'">
+                <article [innerHTML]="'mInfo.primeng' | translate | safeHtml"></article>
+            </bento-card>
+        </article>
+
+        <!-- AOS -->
+        <article>
+            <bento-card [alt]="'AOS'">
+                <article [innerHTML]="'mInfo.aos' | translate | safeHtml"></article>
+            </bento-card>
+        </article>
+
+        <!-- astro -->
+        <article>
+            <bento-card [imgSource]="'../../../../assets/images/masInfo/astro.webp'" [alt]="'astroIcon'">
+                <article [innerHTML]="'mInfo.astro' | translate | safeHtml"></article>
+            </bento-card>
+        </article>
+    </section>
+
+    <hr>
+
+    <!-- Librerías y Frameworks -->
+    <p [innerHTML]="'mInfo.p3' | translate | safeHtml" class="pre"></p>
+
+    <!-- <div class="flex cont">
+      <div>
+        <img src='../../../assets/images/masInfo/primeng.webp' alt='PrimeNG Icon' width='50px' height='50px'>
+        <p><a href="https://primeng.org" target="_blank" rel="noopener noreferrer"><strong>PrimeNG</strong></a>
+      </div>
+    </div> -->
+</div>

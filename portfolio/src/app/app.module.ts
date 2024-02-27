@@ -22,6 +22,9 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { CardComponent } from './components/portfolio/card/card.component';
 import { UserCardComponent } from './components/components/user-card/user-card.component';
 import { ComponentsComponent } from './components/components/components.component';
+import { ModalComponent } from './components/components/modal/modal.component';
+import { BentoComponent } from './components/bento/bento.component';
+import { BentoCardComponent } from './components/bento/card/card.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -38,7 +41,10 @@ export function HttpLoaderFactory(http: HttpClient) {
     PortfolioComponent,
     CardComponent,
     UserCardComponent,
-    ComponentsComponent
+    ComponentsComponent,
+    ModalComponent,
+    BentoComponent,
+    BentoCardComponent
   ],
   imports: [
     BrowserModule,

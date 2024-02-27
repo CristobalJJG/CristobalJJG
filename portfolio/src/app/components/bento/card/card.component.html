@@ -1,0 +1,8 @@
+<div class="card">
+    <img src="{{imgSource}}" alt="{{alt}}" width="auto" height="75" *ngIf="imgSource!=''; else name" />
+    <ng-content></ng-content>
+</div>
+
+<ng-template #name>
+    <h2 class="alt">{{alt}}</h2>
+</ng-template>

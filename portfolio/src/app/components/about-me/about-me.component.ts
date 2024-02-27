@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ModalService } from 'src/app/services/modal.service';
 
 @Component({
   selector: 'app-about-me',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./about-me.component.scss']
 })
 export class AboutMeComponent {
-
+  constructor(protected modalService: ModalService) { }
 }

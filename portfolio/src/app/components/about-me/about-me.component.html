@@ -18,48 +18,5 @@
     </article>
   </section>
 
-  <section class="container">
-    <article>
-      <h1 [innerHTML]="'mInfo.title' | translate | safeHtml"></h1>
-
-      <!-- AWS y OCI -->
-      <p [innerHTML]="'mInfo.p1' | translate | safeHtml" class="pre"></p>
-
-      <!-- Primera fila -->
-      <section class="flex cont">
-        <!-- AWS -->
-        <article class="flex sect" [innerHTML]="'mInfo.aws' | translate | safeHtml"></article>
-        <!-- OCI -->
-        <article class="flex sect" [innerHTML]="'mInfo.oci' | translate | safeHtml"></article>
-      </section>
-
-      <hr>
-
-      <!-- Librerías y Frameworks -->
-      <p [innerHTML]="'mInfo.p2' | translate | safeHtml" class="pre"></p>
-
-      <!-- Segunda fila -->
-      <section class="flex cont">
-        <!-- PrimeNG -->
-        <article class="flex sect" [innerHTML]="'mInfo.primeng' | translate | safeHtml"> </article>
-        <!-- AOS -->
-        <article class="flex sect" [innerHTML]="'mInfo.aos' | translate | safeHtml"> </article>
-
-        <!-- astro -->
-        <article class="flex sect" [innerHTML]="'mInfo.astro' | translate | safeHtml"> </article>
-      </section>
-
-      <hr>
-
-      <!-- Librerías y Frameworks -->
-      <p [innerHTML]="'mInfo.p3' | translate | safeHtml" class="pre"></p>
-
-      <!-- <div class="flex cont">
-        <div class="flex sect">
-          <img src='../../../assets/images/masInfo/primeng.webp' alt='PrimeNG Icon' width='50px' height='50px'>
-          <p><a href="https://primeng.org" target="_blank" rel="noopener noreferrer"><strong>PrimeNG</strong></a>
-        </div>
-      </div> -->
-    </article>
-  </section>
+  <app-bento></app-bento>
 </div>

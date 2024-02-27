@@ -7,6 +7,7 @@ import { Portfolio } from 'src/class/portfolio';
   template: `
     <app-about-me class="about-me"></app-about-me>
 
+    <h1>Proyectos: </h1>
     <h2 class="flex">
       <app-card *ngFor="let p of data" [portfolio]="p"></app-card>
     </h2>
