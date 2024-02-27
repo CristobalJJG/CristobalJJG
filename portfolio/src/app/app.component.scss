@@ -55,13 +55,3 @@ h2 {
     }
   }
 }
-
-/* menor a 768px */
-@media only screen and (max-width: 768px) {
-  .main {
-    width: 98%;
-    margin: 10px 0;
-    padding-top: 125px;
-    overflow-x: hidden;
-  }
-}
