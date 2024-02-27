@@ -5,11 +5,11 @@ import { Portfolio } from 'src/class/portfolio';
 @Component({
   selector: 'app-portfolio',
   template: `
-    <app-about-me class="about-me"></app-about-me>
+    <app-about-me class="about-me"  data-aos="fade-up"></app-about-me>
 
     <h1>Proyectos: </h1>
     <h2 class="flex">
-      <app-card *ngFor="let p of data" [portfolio]="p"></app-card>
+      <app-card *ngFor="let p of data" [portfolio]="p"  data-aos="fade-up"></app-card>
     </h2>
   `,
   styleUrls: ['./portfolio.component.scss']

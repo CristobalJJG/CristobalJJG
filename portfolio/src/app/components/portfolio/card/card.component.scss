@@ -60,6 +60,7 @@ p {
   border-radius: 5px;
   max-height: 300px;
   object-fit: cover;
+  filter: drop-shadow(0 5px 10px rgba($gray, .8));
 }
 
 h1 {
@@ -99,45 +100,5 @@ ul {
 
   &.tiny {
     display: block;
-  }
-}
-
-/* menor a 1024px */
-@media only screen and (max-width: 1024px) {
-  .card.grid {
-    display: flex;
-    flex-direction: column;
-  }
-
-  h1 {
-    font-size: 32px !important;
-    margin: 20px 0;
-  }
-
-  p {
-    padding: 10px 10px;
-  }
-
-  .flex.icon {
-    margin: 10px 10px;
-  }
-
-  .flex.line {
-    justify-content: center;
-  }
-
-  .svg {
-    &.large {
-      display: block;
-
-      a {
-        display: grid;
-        place-items: center;
-      }
-    }
-
-    &.tiny {
-      display: none;
-    }
   }
 }

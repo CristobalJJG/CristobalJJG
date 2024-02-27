@@ -16,6 +16,7 @@ $backdrop: blur(10px);
 
 .picture {
   width: 50%;
+  filter: drop-shadow(0 5px 10px rgba($gray, .8));
 
   img {
     width: 100%;
@@ -204,29 +205,4 @@ h1 {
 
 h2 {
   text-align: center;
-}
-
-/* menor a 1024px */
-@media (max-width: 900px) {
-  .flex {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .info,
-  .picture {
-    width: 100%;
-  }
-
-  .info {
-    padding: 0;
-    align-items: normal;
-  }
-}
-
-/* menor a 768px */
-@media only screen and (max-width: 500px) {
-  .container {
-    margin: 100px 3.5%;
-  }
 }

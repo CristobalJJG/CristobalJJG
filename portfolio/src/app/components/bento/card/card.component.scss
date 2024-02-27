@@ -16,9 +16,15 @@ $bg2: rgba($gray, 0.05);
 }
 
 img,
-h2.alt {
+p.alt {
     margin-bottom: 20px;
     filter: drop-shadow(0 5px 10px rgba($gray, .8));
+}
+
+p {
+    font-weight: bolder;
+    font-size: 75px;
+    font-family: "Noto Sans Mono", monospace;
 }
 
 img {
