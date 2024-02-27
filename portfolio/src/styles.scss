@@ -73,9 +73,6 @@ hr {
   background-color: $gray;
 }
 
-a {
-  text-decoration: none;
-}
 
 li {
   list-style: none;
@@ -85,17 +82,18 @@ li {
   cursor: pointer;
 }
 
-$border: 2px solid $white;
+$border: 1px solid $white;
 
 a {
   color: rgba($white, .95);
+  transition: all .01s ease-in-out;
   border: 2px solid transparent;
   border-bottom: $border;
   padding: 1px;
+  text-decoration: none;
 
   &:hover {
-    color: rgba($white, .8);
-    border: $border;
-    border-radius: 4px;
+    color: rgba($yellow, .8);
+    border-bottom: $yellow solid 1px;
   }
 }
