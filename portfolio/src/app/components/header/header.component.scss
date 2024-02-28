@@ -30,3 +30,32 @@ select {
     background-color: rgba($gray, 0.8);
   }
 }
+
+@media (width <=1024px) {
+  header {
+    width: calc(100% - $left-right-margin);
+    margin: 5px calc($left-right-margin / 2);
+  }
+
+  #title {
+    margin-left: $m / 3;
+  }
+
+  select {
+    margin-right: calc($m/2);
+  }
+}
+
+@media (width <=768px) {
+  #title>h2 {
+    font-size: xx-large;
+  }
+
+  header {
+    height: 100px;
+  }
+
+  select {
+    height: 50px;
+  }
+}

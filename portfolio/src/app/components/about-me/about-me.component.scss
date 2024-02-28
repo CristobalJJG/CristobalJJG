@@ -206,3 +206,11 @@ h1 {
 h2 {
   text-align: center;
 }
+
+@media (width <=1024px) {
+  .bubble {
+    &.yl {
+      display: none;
+    }
+  }
+}
