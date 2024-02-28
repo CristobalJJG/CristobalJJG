@@ -3,10 +3,13 @@
 
   <div class="main">
     <app-profile class="profile"></app-profile>
-    <div class="center">
+    <div class="center components noShowTiny">
       <h2 [routerLink]="['/portfolio']" [routerLinkActive]="['active']" class="click">Portfolio</h2>
-      <h2 [routerLink]="['/components']" [routerLinkActive]="['active']" class="click">Componentes</h2>
+      <h2 [routerLink]="['/components']" [routerLinkActive]="['active']" class="click">
+        Componentes
+      </h2>
     </div>
+    <p [innerHTML]="'main.noComponents' | translate | safeHtml" class="components showTiny"></p>
     <router-outlet class="portfolio"></router-outlet>
   </div>
 </main>

@@ -2,7 +2,7 @@
 
 $bg: rgba($gray, 0.25);
 
-$m: 25px;
+$m: 50px;
 
 header {
   width: calc(100% - $m * 2);
@@ -10,7 +10,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 5px $left-right-margin;
+  margin: 5px $m;
   background-color: $bg;
   border-radius: 10px;
   height: 64px;
@@ -32,6 +32,8 @@ select {
 }
 
 @media (width <=1024px) {
+  $m: 25px;
+
   header {
     margin: 5px $m;
   }

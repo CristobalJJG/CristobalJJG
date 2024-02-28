@@ -6,6 +6,9 @@
     "home": "Inicio"
   },
   "description": "Soy un nuevo <strong>Ingeniero Informático</strong> en el sector. Me encanta la <strong>programación</strong> y la <strong>personalización</strong> de Sistemas Operativos.",
+  "main": {
+    "noComponents": "Para poder ver algunos componentes que he creado, modificado, o implementado, por favor, acceda con <em>Modo escritorio</em> o desde un navegador en PC."
+  },
   "about": {
     "title": "Sobre mí",
     "p1": "<strong>Programador Junior</strong> recién titulado de la Universidad de Las Palmas de Gran Canaria.",
