@@ -2,8 +2,10 @@
 
 $bg: rgba($gray, 0.25);
 
+$m: 25px;
+
 header {
-  width: calc(100% - $left-right-margin * 2);
+  width: calc(100% - $m * 2);
   position: relative;
   display: flex;
   align-items: center;
@@ -15,8 +17,6 @@ header {
   backdrop-filter: blur(10px);
   box-shadow: $shadow-bot;
 }
-
-$m: 75px;
 
 #title {
   margin-left: $m;
@@ -33,8 +33,7 @@ select {
 
 @media (width <=1024px) {
   header {
-    width: calc(100% - $left-right-margin);
-    margin: 5px calc($left-right-margin / 2);
+    margin: 5px $m;
   }
 
   #title {
@@ -48,7 +47,7 @@ select {
 
 @media (width <=768px) {
   #title>h2 {
-    font-size: xx-large;
+    font-size: larger;
   }
 
   header {

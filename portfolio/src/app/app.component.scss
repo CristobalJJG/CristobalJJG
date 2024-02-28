@@ -2,7 +2,7 @@
 
 app-header {
   position: fixed;
-  width: 100%;
+  width: 100vw;
   z-index: 13;
 }
 
@@ -11,8 +11,7 @@ main {
 }
 
 .main {
-  margin: 10px $left-right-margin;
-  width: calc(100% - ($left-right-margin * 2));
+  width: 100%;
   padding-top: 100px;
   display: flex;
   flex-direction: column;

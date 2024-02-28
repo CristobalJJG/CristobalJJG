@@ -31,7 +31,7 @@
     <!-- Labels -->
     <section>
       <article class="flex">
-        <h2>Techs:</h2>
+        <h2>Techs<span class="tp">:</span></h2>
         <ul>
           <li *ngFor="let t of tagsFront" class="toptt">
             <img loading="lazy" src="{{ t.icon }}" alt="{{ t.txt }}" width="48px" height="48px" />
@@ -39,8 +39,9 @@
           </li>
         </ul>
       </article>
+      <hr>
       <article class="flex">
-        <h2>Langs:</h2>
+        <h2>Langs<span class="tp">:</span></h2>
         <ul>
           <li *ngFor="let t of tagsLang" class="toptt">
             <img loading="lazy" src="{{ t.icon }}" alt="{{ t.txt }}" width="48px" height="48px" />
@@ -48,8 +49,9 @@
           </li>
         </ul>
       </article>
+      <hr>
       <article class="flex">
-        <h2>OS:</h2>
+        <h2>OS<span class="tp">:</span></h2>
         <ul>
           <li *ngFor="let t of tagsSO" class="toptt">
             <img loading="lazy" src="{{ t.icon }}" alt="{{ t.txt }}" width="48px" height="48px" />
@@ -57,6 +59,7 @@
           </li>
         </ul>
       </article>
+      <hr>
     </section>
   </article>
 
