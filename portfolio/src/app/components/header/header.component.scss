@@ -34,10 +34,6 @@ select {
 @media (width <=1024px) {
   $m: 25px;
 
-  header {
-    margin: 5px $m;
-  }
-
   #title {
     margin-left: $m / 3;
   }
@@ -54,6 +50,8 @@ select {
 
   header {
     height: 100px;
+    width: 90%;
+    margin: 5px 5%;
   }
 
   select {
