@@ -231,8 +231,8 @@ h2 {
 
 @media (width <=768px) {
   .container {
-    width: 95%;
-    margin: 50px 2.5%;
+    width: 80%;
+    margin: 50px 4.5%;
     padding: 25px;
     height: auto;
 
@@ -261,5 +261,15 @@ h2 {
 
   .picture {
     width: 100%;
+  }
+
+  .bubble {
+
+    &.yl,
+    &.rd,
+    &.gr,
+    &.bl {
+      display: none;
+    }
   }
 }

@@ -93,12 +93,49 @@ ul {
   }
 }
 
-.svg {
-  &.large {
+span:hover>a>svg>path {
+  fill: $yellow;
+}
+
+a {
+  border: none;
+}
+
+@media (width <=768px) {
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  img.img {
+    max-height: 200px;
+    object-fit: cover;
+    max-width: calc(100% - 20px);
+  }
+
+  .card {
+    height: fit-content;
+    width: auto;
+    margin: 10px 3.5%;
+  }
+
+  .tiny {
     display: none;
   }
 
-  &.tiny {
-    display: block;
+  section.full,
+  .icon {
+    &.flex {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .flex.icon {
+    margin: 0;
+  }
+
+  p {
+    padding: 10px 0;
   }
 }
