@@ -16,7 +16,7 @@ Me interesan los frameworks y librerías de componentes que nos ayudan a desarro
 
 También tengo ganas de formarme de una forma más profesional sobre:
 
-![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&label=Front-end&labelColor=656565) ![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&label=Front-end&labelColor=656565) ![React Native](https://img.shields.io/badge/react_native-%2320232a.svg?style=for-the-badge&logo=react&label=Front-end&labelColor=656565)
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&label=Front-end&labelColor=656565) ![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&label=Front-end&labelColor=656565) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&label=Front-end&labelColor=656565)
 
 ![Ionic](https://img.shields.io/badge/Ionic-%233880FF.svg?style=for-the-badge&logo=Ionic&label=Hibrid&labelColor=656565) ![Kotlin](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white&label=Mobile&labelColor=656565)
 
