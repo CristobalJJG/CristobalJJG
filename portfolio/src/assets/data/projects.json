@@ -1,0 +1,14 @@
+[
+    {
+        "titleKey": "projects.ecommerce.title",
+        "descriptionKey": "projects.ecommerce.description"
+    },
+    {
+        "titleKey": "projects.chat.title",
+        "descriptionKey": "projects.chat.description"
+    },
+    {
+        "titleKey": "projects.analytics.title",
+        "descriptionKey": "projects.analytics.description"
+    }
+]

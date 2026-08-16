@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Vercel",
+        "icon": "assets/svg/vercel.svg"
+    },
+    {
+        "name": "Figma",
+        "icon": "assets/svg/figma.svg"
+    },
+    {
+        "name": "GIMP",
+        "icon": "assets/svg/gimp.svg"
+    },
+    {
+        "name": "Adobe Photoshop",
+        "icon": "assets/svg/adobe-photoshop.svg"
+    },
+    {
+        "name": "Illustrator",
+        "icon": "assets/svg/illustrator.svg"
+    },
+    {
+        "name": "AWS",
+        "icon": "assets/svg/aws.svg"
+    },
+    {
+        "name": "Claude",
+        "icon": "assets/svg/claude.svg"
+    },
+    {
+        "name": "OpenCode",
+        "icon": "assets/svg/opencode.svg"
+    },
+    {
+        "name": "Git",
+        "icon": "assets/svg/git.svg"
+    },
+    {
+        "name": "Hermes AI",
+        "icon": "assets/svg/hermes-ai.svg"
+    }
+]

@@ -1,0 +1,13 @@
+<section id="interests" class="py-20 px-4">
+    <div class="max-w-6xl mx-auto">
+        <h2 class="text-4xl font-bold mb-12 text-center">{{ 'interests.title' | translate }}</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div *ngFor="let interest of interests"
+                class="glass-card p-8 hover:shadow-glass transition-all duration-300 flex flex-col items-center text-center">
+                <img [src]="interest.icon" alt="{{ interest.nameKey | translate }}"
+                    class="w-12 h-12 mb-4 object-contain" loading="lazy" decoding="async">
+                <h3 class="text-xl font-semibold">{{ interest.nameKey | translate }}</h3>
+            </div>
+        </div>
+    </div>
+</section>

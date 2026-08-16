@@ -1,0 +1,32 @@
+[
+    {
+        "icon": "assets/skills/angular.png",
+        "nameKey": "skill.angular",
+        "level": 85
+    },
+    {
+        "icon": "assets/skills/odoo.svg",
+        "nameKey": "skill.odoo",
+        "level": 75
+    },
+    {
+        "icon": "assets/skills/typescript.svg",
+        "nameKey": "skill.typescript",
+        "level": 80
+    },
+    {
+        "icon": "assets/skills/databases.svg",
+        "nameKey": "skill.databases",
+        "level": 70
+    },
+    {
+        "icon": "assets/skills/responsive.svg",
+        "nameKey": "skill.responsive",
+        "level": 80
+    },
+    {
+        "icon": "assets/skills/performance.svg",
+        "nameKey": "skill.performance",
+        "level": 70
+    }
+]

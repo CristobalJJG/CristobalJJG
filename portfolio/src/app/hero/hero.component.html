@@ -1,0 +1,21 @@
+<section id="hero" class="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
+    <div class="absolute inset-0 -z-10">
+        <div class="absolute top-0 right-0 w-72 h-72 sm:w-80 sm:h-80 bg-blue-500/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 w-72 h-72 sm:w-80 sm:h-80 bg-purple-500/10 rounded-full blur-3xl"></div>
+    </div>
+
+    <div class="max-w-4xl mx-auto px-4 text-center">
+        <div class="glass-card p-8 sm:p-12 mb-8">
+            <h2
+                class="text-4xl font-bold sm:text-5xl md:text-6xl h-20 mb-6 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+                {{ 'hero.greeting' | translate }}
+            </h2>
+            <p class="text-xl text-gray-300 mb-6">
+                {{ 'hero.subtitle' | translate }}
+            </p>
+            <p class="text-lg text-gray-400">
+                {{ 'hero.description' | translate }}
+            </p>
+        </div>
+    </div>
+</section>

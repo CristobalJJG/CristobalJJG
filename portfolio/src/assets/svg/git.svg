@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Git logo">
+    <polygon points="256,30 482,256 256,482 30,256" fill="#F15A24" />
+
+    <g fill="none" stroke="#F7F7F7" stroke-linecap="round" stroke-linejoin="round" stroke-width="34">
+        <path d="M256 146V278" />
+        <path d="M256 278H355" />
+        <path d="M256 278V402" />
+    </g>
+
+    <g fill="#F7F7F7">
+        <circle cx="256" cy="146" r="28" />
+        <circle cx="355" cy="278" r="28" />
+        <circle cx="256" cy="402" r="28" />
+    </g>
+</svg>

@@ -1,0 +1,8 @@
+<div [class]="'glass-card p-4 flex flex-col gap-3 ' + sizeClass">
+    <ng-container *ngIf="image">
+        <img [src]="image" alt="{{ title }}" class="w-full object-cover rounded-md mb-2" loading="lazy" decoding="async"/>
+    </ng-container>
+    <h3 *ngIf="title" class="text-xl font-semibold">{{ title }}</h3>
+    <p *ngIf="description" class="text-sm text-gray-300">{{ description }}</p>
+    <ng-content></ng-content>
+</div>

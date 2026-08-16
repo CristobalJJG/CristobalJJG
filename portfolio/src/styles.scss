@@ -1,99 +1,79 @@
-/* You can add global styles to this file, and also import other style files */
-@import "./themes/colors.scss";
-@import "./themes/shadows.scss";
-@import "./themes/variables.scss";
-@import "./themes/forms.scss";
-@import "./themes/grid.scss";
-@import "./themes/skeleton.scss";
-@import "./themes/tooltip.scss";
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+Mono:wght@100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 * {
   margin: 0;
   padding: 0;
-  transition: $transition-3s;
+  box-sizing: border-box;
+}
 
-  &::-webkit-scrollbar {
-    width: 8px;
-  }
-
-  &::-webkit-scrollbar-track {
-    background: rgba($black, 0.4);
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background-color: $dark-gray;
-    border-radius: 5px;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background-color: $background;
-  color: $white;
-  width: 100%;
-  font-family: "Poppins", sans-serif;
+  @apply bg-slate-950 text-white font-sans overflow-x-hidden;
 }
 
-h1,
-h2,
-h3 {
-  font-family: "Noto Sans Mono", monospace;
-  font-weight: 600;
+.dark body {
+  @apply bg-slate-950;
 }
 
-p {
-  font-family: "Poppins", sans-serif;
-}
+@layer components {
+  .glass-card {
+    @apply backdrop-blur-glass bg-gradient-glass border border-white/20 rounded-2xl shadow-glass;
+  }
 
-h1 {
-  font-size: 2.5rem;
-}
+  /* Variant para tarjetas glass más oscuras */
+  .glass-card.glass-dark {
+    background: linear-gradient(135deg, rgba(6, 7, 8, 0.7), rgba(10, 11, 12, 0.45));
+    border-color: rgba(255, 255, 255, 0.06);
+    box-shadow: 0 8px 30px rgba(2, 6, 23, 0.6);
+  }
 
-h2 {
-  font-size: 2rem;
-}
+  /* Orbes difuminados similares al hero */
+  .glass-card.glass-dark {
+    position: relative;
+    overflow: hidden;
+  }
 
-h3 {
-  font-size: 2rem;
-}
+  .glass-card.glass-dark::before,
+  .glass-card.glass-dark::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: -1;
+    filter: blur(4vmin);
+    opacity: 0.08;
+  }
 
-.flex {
-  display: flex;
-}
+  .glass-card.glass-dark::before {
+    /* top-right bluish orb */
+    top: -10%;
+    right: -10%;
+    width: 24vmin;
+    height: 24vmin;
+    background: #06b6d4;
+    /* cyan */
+  }
 
-svg {
-  fill: white;
-}
+  .glass-card.glass-dark::after {
+    /* bottom-left purple orb */
+    bottom: -10%;
+    left: -10%;
+    width: 24vmin;
+    height: 24vmin;
+    background: #8b5cf6;
+    /* purple */
+  }
 
-hr {
-  width: 100%;
-  margin: 10px 0;
-  height: 0.1rem;
-  border-color: $gray;
-  background-color: $gray;
-}
+  .glass-button {
+    @apply px-6 py-3 backdrop-blur-glass bg-glass-light dark:bg-glass-dark border border-white/30 rounded-xl text-white font-semibold transition-all duration-300 hover:border-white/50 hover:shadow-glass cursor-pointer;
+  }
 
-
-li {
-  list-style: none;
-}
-
-.click {
-  cursor: pointer;
-}
-
-$border: 1px solid $white;
-
-a {
-  color: rgba($white, .95);
-  transition: all .01s ease-in-out;
-  border: 2px solid transparent;
-  border-bottom: $border;
-  padding: 1px;
-  text-decoration: none;
-
-  &:hover {
-    color: rgba($yellow, .8);
-    border-bottom: $yellow solid 1px;
+  .glass-button:hover {
+    @apply scale-105;
   }
 }

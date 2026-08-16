@@ -1,0 +1,47 @@
+.card {
+	position: relative;
+	user-select: none;
+	overflow: hidden;
+	transition: transform 400ms cubic-bezier(.2, .8, .2, 1), box-shadow 400ms, border-color 400ms;
+	will-change: transform;
+	border: 1px solid rgba(255, 255, 255, 0.05);
+	backdrop-filter: blur(12px) saturate(160%);
+	-webkit-backdrop-filter: blur(12px) saturate(160%);
+	box-shadow: 0 10px 30px rgba(2, 6, 23, 0.4);
+	
+	&:hover {
+		transform: translateY(-8px) scale(1.03);
+		box-shadow: 0 25px 60px rgba(2, 6, 23, 0.6);
+		border-color: rgba(255, 255, 255, 0.12);
+
+		.icon-wrapper {
+			transform: scale(1.1) rotate(2deg);
+			background-color: rgba(15, 23, 42, 0.8);
+			border-color: rgba(255, 255, 255, 0.1);
+		}
+	}
+}
+
+.icon-wrapper {
+	transition: transform 400ms cubic-bezier(.2, .8, .2, 1), background-color 400ms, border-color 400ms;
+	will-change: transform;
+	
+	svg {
+		transition: filter 400ms ease;
+	}
+}
+
+.name {
+	color: white;
+	background: linear-gradient(90deg, #f1f5f9, #cbd5e1);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	transition: background 400ms ease;
+}
+
+.card:hover .name {
+	background: linear-gradient(90deg, #ffffff, #f1f5f9);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+

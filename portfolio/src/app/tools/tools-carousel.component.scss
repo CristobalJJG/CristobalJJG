@@ -1,0 +1,59 @@
+.tools-section {
+    color: #e2e8f0;
+}
+
+.tools-section h2 {
+    color: #f8fafc;
+}
+
+.carousel-viewport {
+    overflow: hidden;
+}
+
+.track {
+    display: flex;
+    gap: 1rem;
+}
+
+.tool-item {
+    min-width: 9rem;
+    padding: 0.9rem 1rem;
+    border-radius: 1.4rem;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+}
+
+.tool-icon {
+    min-height: 2.5rem;
+    min-width: 2.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    background: rgba(148, 163, 184, 0.12);
+}
+
+.tool-svg {
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+.tool-name {
+    margin: 0;
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: #f8fafc;
+}
+
+@keyframes scroll-left {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}

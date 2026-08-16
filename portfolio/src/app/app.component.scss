@@ -1,75 +1,21 @@
-@import "../styles.scss";
-
-app-header {
-  position: fixed;
-  width: 100%;
-  z-index: 13;
+section {
+  @apply min-h-screen py-20;
 }
 
-main {
-  position: relative;
+section:nth-child(even) {
+  @apply bg-gradient-to-b from-slate-900 to-slate-950;
 }
 
-.main {
-  width: 100%;
-  padding-top: 100px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+section:nth-child(odd) {
+  @apply bg-slate-950;
 }
 
-.profile,
-.about-me {
-  width: 100%;
+a {
+  @apply transition-colors duration-300;
 }
 
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  * {
-    margin: 0 10px;
-  }
-}
-
-h2 {
-  text-align: center;
-  border-top: 5px solid rgba(#000, 0);
-  border-bottom: 5px solid rgba(#000, 0);
-  padding: 5px 30px;
-
-  &:hover {
-    border-top: 5px solid rgba(#333, .8);
-    border-bottom: 5px solid rgba(#333, .8);
-  }
-
-  &.active {
-    border-top: 5px solid $white;
-    border-bottom: 5px solid $white;
-
-    &:hover {
-      border-top: 5px solid rgba(#DDD, .8);
-      border-bottom: 5px solid rgba(#DDD, .8);
-    }
-  }
-}
-
-.showTiny {
-  display: none;
-}
-
-@media(width <=768px) {
-  .components {
-    &.noShowTiny {
-      display: none;
-    }
-
-    &.showTiny {
-      display: block;
-      text-align: justify;
-      margin: 25px 30px 0 30px;
-    }
+input, textarea {
+  &::placeholder {
+    @apply text-gray-500;
   }
 }

@@ -1,0 +1,13 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="OpenCode icon">
+    <rect width="512" height="512" rx="120" fill="#050505" />
+
+    <g fill="#F5F5F5">
+        <rect x="88" y="88" width="96" height="336" />
+        <rect x="184" y="88" width="240" height="96" />
+        <rect x="184" y="328" width="240" height="96" />
+        <rect x="328" y="88" width="96" height="336" />
+        <rect x="88" y="184" width="96" height="96" />
+        <rect x="328" y="184" width="96" height="96" />
+        <rect x="88" y="328" width="96" height="96" />
+    </g>
+</svg>

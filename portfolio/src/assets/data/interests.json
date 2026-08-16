@@ -1,0 +1,26 @@
+[
+    {
+        "icon": "assets/icons/interests/gaming.svg",
+        "nameKey": "interests.videojuegos"
+    },
+    {
+        "icon": "assets/icons/interests/reading.svg",
+        "nameKey": "interests.leer"
+    },
+    {
+        "icon": "assets/icons/interests/music.svg",
+        "nameKey": "interests.musica"
+    },
+    {
+        "icon": "assets/icons/interests/running.svg",
+        "nameKey": "interests.correr"
+    },
+    {
+        "icon": "assets/icons/interests/problem-solving.svg",
+        "nameKey": "interests.resolver"
+    },
+    {
+        "icon": "assets/icons/interests/travel.svg",
+        "nameKey": "interests.viajar"
+    }
+]

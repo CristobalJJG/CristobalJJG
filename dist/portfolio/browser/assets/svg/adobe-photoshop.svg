@@ -1,0 +1,5 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <rect x="8" y="8" width="84" height="84" rx="18" fill="#001E36" />
+    <text x="50" y="62" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif"
+        font-weight="700" font-size="42" fill="#31A8FF">PS</text>
+</svg>

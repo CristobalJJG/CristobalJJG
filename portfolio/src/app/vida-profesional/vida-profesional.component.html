@@ -1,0 +1,97 @@
+<section id="vida-profesional" class="max-w-6xl mx-auto px-4 py-20">
+    <h2 class="text-3xl font-bold mb-6">{{ 'vida.title' | translate }}</h2>
+
+    <div class="grid gap-8 lg:grid-cols-[360px_1fr]">
+        <div class="space-y-6">
+            <p class="text-slate-400">{{ 'vida.instructions' | translate }}</p>
+
+            <div class="relative pl-8">
+                <div class="absolute left-4 top-[-0.5rem] bottom-0 w-px bg-slate-500/30"></div>
+
+                <div *ngFor="let job of jobs" class="relative">
+                    <div class="mt-8 mb-2 text-[9px] uppercase tracking-[0.28em] text-slate-300">{{ job.period |
+                        translate }}</div>
+                    <button type="button" class="group w-full text-left" (click)="selectJob(job)"
+                        [attr.aria-pressed]="selectedJob.id === job.id">
+                        <div class="absolute left-0 top-6 h-20 w-20 rounded-full border border-white/10 bg-slate-900/80 shadow-lg shadow-slate-950/20 flex items-center justify-center transition-all duration-300 ease-out"
+                            [ngClass]="{ 'border-blue-400/70 ring-2 ring-blue-400/20 scale-[1.04]': selectedJob.id === job.id }">
+                            <img [src]="job.timelineLogo" [alt]="job.company | translate"
+                                class="h-10 w-10 object-contain" />
+                        </div>
+
+                        <div class="ml-28 rounded-3xl border border-white/10 bg-white/5 p-4 transition-all duration-300 ease-out hover:border-blue-400/50 hover:bg-white/10"
+                            [ngClass]="{ 'border-blue-400/60 bg-blue-500/10': selectedJob.id === job.id }">
+                            <p class="text-sm uppercase tracking-[0.24em] text-blue-300">{{ job.company | translate }}
+                            </p>
+                            <h3 class="mt-2 text-lg font-semibold text-white">{{ job.title | translate }}</h3>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="glass-card p-8 h-full">
+            <ng-container *ngIf="selectedJob; else noSelection">
+                <div class="detail-card-shell" [class.detail-card-closing]="cardTransitionState === 'closing'"
+                    [class.detail-card-opening]="cardTransitionState === 'opening'">
+                    <ng-container *ngIf="cardTransitionState !== 'closing'; else closingPlaceholder">
+                        <div class="flex flex-col gap-6">
+                            <div class="flex flex-col gap-1 md:flex-row md:items-center md:justify-between">
+                                <div>
+                                    <p class="text-sm uppercase tracking-[0.24em] text-blue-300">{{ selectedJob.company
+                                        | translate }}</p>
+                                    <h3 class="text-2xl font-semibold text-white">{{ selectedJob.title | translate }}
+                                    </h3>
+                                </div>
+                                <a href="{{ selectedJob.url }}" target="_blank" rel="noopener noreferrer"
+                                    class="text-blue-400 hover:text-blue-300 font-semibold">{{ 'vida.viewSite' |
+                                    translate }}</a>
+                            </div>
+
+                            <div class="flex flex-col gap-4">
+                                <div
+                                    class="flex items-center gap-4 rounded-2xl border border-white/10 bg-slate-950/40 p-4 shadow-[0_0_0_1px_rgba(255,255,255,0.04)]">
+                                    <div
+                                        class="flex min-h-24 w-full max-w-44 items-center justify-center overflow-hidden rounded-2xl border  bg-white/45 p-3 shadow-lg shadow-slate-950/30 ring-1 ring-white/10">
+                                        <img [src]="selectedJob.detailLogo" [alt]="selectedJob.company | translate"
+                                            class="h-full w-full object-contain" />
+                                    </div>
+                                    <div>
+                                        <h4 class="text-xl font-semibold text-white">{{ 'vida.description' | translate
+                                            }}</h4>
+                                        <p class="mt-1 text-sm text-slate-400">{{ selectedJob.company | translate }}</p>
+                                    </div>
+                                </div>
+                                <p class="text-slate-200 leading-7">{{ selectedJob.description | translate }}</p>
+                            </div>
+
+                            <div *ngIf="selectedJob.details.length" class="space-y-3">
+                                <h4 class="text-xl font-semibold text-white">{{ 'vida.moreInfo' | translate }}</h4>
+                                <ul class="space-y-3">
+                                    <li *ngFor="let detail of selectedJob.details" class="flex gap-3">
+                                        <span class="mt-1 inline-flex h-2 w-2 rounded-full bg-blue-400"></span>
+                                        <span class="text-slate-200">{{ detail | translate }}</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </ng-container>
+
+                    <ng-template #closingPlaceholder>
+                        <div class="detail-card-placeholder">
+                            <div class="detail-card-placeholder-bar"></div>
+                            <div class="detail-card-placeholder-bar detail-card-placeholder-bar-short"></div>
+                            <div class="detail-card-placeholder-bar"></div>
+                        </div>
+                    </ng-template>
+                </div>
+            </ng-container>
+
+            <ng-template #noSelection>
+                <div class="flex h-full items-center justify-center text-center text-slate-400">
+                    {{ 'vida.emptyState' | translate }}
+                </div>
+            </ng-template>
+        </div>
+    </div>
+</section>
