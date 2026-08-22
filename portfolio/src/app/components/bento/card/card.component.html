@@ -1,8 +1,0 @@
-<div class="card" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
-    <img src="{{imgSource}}" alt="{{alt}}" width="auto" height="75" *ngIf="imgSource!=''; else name" />
-    <ng-content></ng-content>
-</div>
-
-<ng-template #name>
-    <p class="alt">{{alt}}</p>
-</ng-template>

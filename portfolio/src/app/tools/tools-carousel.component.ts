@@ -1,5 +1,5 @@
+import { Component, ElementRef, inject, NgZone, OnDestroy, OnInit, ViewChild, ChangeDetectionStrategy } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AfterViewChecked, Component, ElementRef, NgZone, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { TranslatePipe } from '../i18n/translate.pipe';
 
 interface Tool {
@@ -12,42 +12,40 @@ interface Tool {
     standalone: true,
     imports: [CommonModule, TranslatePipe],
     templateUrl: './tools-carousel.component.html',
-    styleUrls: ['./tools-carousel.component.scss']
+    styleUrl: './tools-carousel.component.scss',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class ToolsCarouselComponent implements OnInit, AfterViewChecked, OnDestroy {
+export class ToolsCarouselComponent implements OnInit, OnDestroy {
+    @ViewChild('carousel') carousel?: ElementRef<HTMLDivElement>;
 
-    @ViewChild('carousel', { static: false }) carousel?: ElementRef<HTMLDivElement>;
     tools: Tool[] = [];
     displayTools: Tool[] = [];
     private animationId = 0;
-    private autoScrollStarted = false;
     private isPaused = false;
-    private readonly scrollSpeed = 0.7;
+    private readonly scrollSpeed = 1;
+    private ngZone = inject(NgZone);
 
-    constructor(private ngZone: NgZone) { }
+    constructor() { }
 
     async ngOnInit(): Promise<void> {
         try {
             const response = await fetch('/assets/data/tools.json');
-            if (!response.ok) {
-                throw new Error('No se pudo cargar tools.json');
-            }
+            if (!response.ok) throw new Error('No se pudo cargar tools.json');
             this.tools = await response.json();
-            this.displayTools = [...this.tools, ...this.tools];
+
+            if (this.tools.length > 0) {
+                this.displayTools = [...this.tools, ...this.tools];
+                this.ngZone.runOutsideAngular(() => this.startAutoScroll());
+            }
         } catch (error) {
             console.error('Error cargando herramientas:', error);
         }
     }
 
-    ngAfterViewChecked(): void {
-        if (!this.autoScrollStarted && this.displayTools.length && this.carousel?.nativeElement) {
-            this.autoScrollStarted = true;
-            this.ngZone.runOutsideAngular(() => this.startAutoScroll());
-        }
-    }
-
     ngOnDestroy(): void {
-        cancelAnimationFrame(this.animationId);
+        if (this.animationId) {
+            cancelAnimationFrame(this.animationId);
+        }
     }
 
     pauseAutoScroll(): void {
@@ -56,25 +54,24 @@ export class ToolsCarouselComponent implements OnInit, AfterViewChecked, OnDestr
 
     resumeAutoScroll(): void {
         this.isPaused = false;
+        this.startAutoScroll();
     }
 
     private startAutoScroll(): void {
         const container = this.carousel?.nativeElement;
-        if (!container) {
-            return;
-        }
+        if (!container) return;
 
         const step = () => {
-            if (!this.isPaused) {
+            if (!this.isPaused && this.displayTools.length > 0) {
+                container.scrollLeft += this.scrollSpeed;
                 const halfWidth = container.scrollWidth / 2;
-                if (halfWidth > container.clientWidth) {
-                    container.scrollLeft += this.scrollSpeed;
-                    if (container.scrollLeft >= halfWidth) {
-                        container.scrollLeft -= halfWidth;
-                    }
+                if (container.scrollLeft >= halfWidth) {
+                    container.scrollLeft = 0;
                 }
+                this.animationId = requestAnimationFrame(step);
+            } else {
+                this.animationId = requestAnimationFrame(step);
             }
-            this.animationId = requestAnimationFrame(step);
         };
 
         this.animationId = requestAnimationFrame(step);
