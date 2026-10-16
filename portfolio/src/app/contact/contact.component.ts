@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import { TranslatePipe } from '../i18n/translate.pipe';
 
 @Component({
     selector: 'app-contact',
-    standalone: true,
-    imports: [CommonModule, TranslatePipe],
+    imports: [TranslatePipe],
     templateUrl: './contact.component.html',
     styleUrls: ['./contact.component.scss']
 })

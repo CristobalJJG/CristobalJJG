@@ -1,12 +1,11 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslatePipe } from '../i18n/translate.pipe';
 
 @Component({
     selector: 'app-skills',
-    standalone: true,
-    imports: [CommonModule, TranslatePipe, HttpClientModule],
+    imports: [TranslatePipe, HttpClientModule],
     templateUrl: './skills.component.html',
     styleUrls: ['./skills.component.scss']
 })

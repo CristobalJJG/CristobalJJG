@@ -37,6 +37,16 @@
             "title": "Real-time Chat Application",
             "description": "A WebSocket-based chat application with advanced features"
         },
+        "nanoUi": {
+            "title": "Nano UI",
+            "description": "A reusable UI component library for Angular projects."
+        },
+        "nanoChat": {
+            "title": "Nano Chat",
+            "description": "A real-time chat application with Angular, Firebase authentication, and PostgreSQL storage."
+        },
+        "github": "View on GitHub",
+        "page": "Visit website",
         "analytics": {
             "title": "Analytics Dashboard",
             "description": "A data visualization platform for business analytics"
@@ -98,15 +108,22 @@
             }
         },
         "bdkapital": {
-            "company": "BDKapital",
-            "title": "Full Stack Developer - Internship",
-            "period": "2022 — 2023 (internship) / 2023",
-            "description": "Developed Angular components, worked with a Django backend, managed MongoDB databases, and handled deployments on AWS. I also used SonarQube and Lighthouse for analysis, refactoring, visual improvements, backup automation, and general project maintenance.",
+            "company": "Vida BD Kapital",
+            "title": "Full Stack Developer",
+            "period": "2022 — 2023",
+            "description": "Web application development and database management. Participation in the full software lifecycle, from design to deployment.",
             "details": {
-                "one": "Responsible for coordination and continuous improvements.",
-                "two": "Project management and communication with stakeholders.",
-                "three": "Implementation of new business-oriented features."
+                "one": "RESTful API development.",
+                "two": "SQL and NoSQL database management.",
+                "three": "Application performance optimization."
             }
+        },
+        "education": {
+            "title": "Education and Training",
+            "school": "School of Computer Engineering (EII)",
+            "university": "University of Las Palmas de Gran Canaria",
+            "location": "GRAN CANARIA",
+            "description": "Academic training focused on software development, systems architecture, and technological project management."
         }
     }
 }

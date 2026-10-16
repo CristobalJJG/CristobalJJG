@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import { HeroComponent } from '../hero/hero.component';
 import { SkillsComponent } from '../skills/skills.component';
 import { VidaProfesionalComponent } from '../vida-profesional/vida-profesional.component';
@@ -8,8 +8,7 @@ import { ToolsCarouselComponent } from '../tools/tools-carousel.component';
 
 @Component({
     selector: 'app-home',
-    standalone: true,
-    imports: [CommonModule, HeroComponent, SkillsComponent, VidaProfesionalComponent, ContactComponent, ToolsCarouselComponent],
+    imports: [HeroComponent, SkillsComponent, VidaProfesionalComponent, ContactComponent, ToolsCarouselComponent],
     templateUrl: './home.component.html',
     styleUrls: ['./home.component.scss']
 })

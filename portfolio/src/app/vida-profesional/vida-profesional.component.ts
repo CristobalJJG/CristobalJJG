@@ -1,5 +1,11 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import {
+    UiAvatarComponent,
+    UiBadgeComponent,
+    UiButtonComponent,
+    UiCardComponent
+} from '@nanojjg/nano-ui-components';
 import { TranslatePipe } from '../i18n/translate.pipe';
 
 interface JobExperience {
@@ -16,16 +22,18 @@ interface JobExperience {
 
 @Component({
     selector: 'app-vida-profesional',
-    standalone: true,
-    imports: [CommonModule, TranslatePipe],
+    imports: [
+        CommonModule,
+        TranslatePipe,
+        UiAvatarComponent,
+        UiBadgeComponent,
+        UiButtonComponent,
+        UiCardComponent
+    ],
     templateUrl: './vida-profesional.component.html',
     styleUrls: ['./vida-profesional.component.scss']
 })
 export class VidaProfesionalComponent {
-    @Output() navigate = new EventEmitter<string>();
-    
-    cardTransitionState: 'idle' | 'closing' | 'opening' = 'idle';
-
     jobs: JobExperience[] = [
         {
             id: 'bitbox',
@@ -78,20 +86,10 @@ export class VidaProfesionalComponent {
     selectedJob = this.jobs[0];
 
     selectJob(job: JobExperience) {
-        if (this.selectedJob.id === job.id) {
-            return;
-        }
+        this.selectedJob = job;
+    }
 
-        this.cardTransitionState = 'closing';
-
-        setTimeout(() => {
-            this.selectedJob = job;
-            this.cardTransitionState = 'opening';
-
-            setTimeout(() => {
-                this.cardTransitionState = 'idle';
-            }, 320);
-        }, 320);
+    openSite(url: string): void {
+        window.open(url, '_blank', 'noopener,noreferrer');
     }
 }
-

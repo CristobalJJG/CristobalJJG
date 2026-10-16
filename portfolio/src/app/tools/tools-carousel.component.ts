@@ -1,5 +1,5 @@
 import { Component, ElementRef, inject, NgZone, OnDestroy, OnInit, ViewChild, ChangeDetectionStrategy } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import { TranslatePipe } from '../i18n/translate.pipe';
 
 interface Tool {
@@ -9,8 +9,7 @@ interface Tool {
 
 @Component({
     selector: 'app-tools-carousel',
-    standalone: true,
-    imports: [CommonModule, TranslatePipe],
+    imports: [TranslatePipe],
     templateUrl: './tools-carousel.component.html',
     styleUrl: './tools-carousel.component.scss',
     changeDetection: ChangeDetectionStrategy.OnPush

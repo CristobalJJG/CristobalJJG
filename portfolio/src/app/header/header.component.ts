@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Output } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import { RouterModule } from '@angular/router';
 import { TranslateService } from '../i18n/translate.service';
 import { TranslatePipe } from '../i18n/translate.pipe';
@@ -7,8 +7,7 @@ import { TranslatePipe } from '../i18n/translate.pipe';
 
 @Component({
     selector: 'app-header',
-    standalone: true,
-    imports: [CommonModule, RouterModule, TranslatePipe],
+    imports: [RouterModule, TranslatePipe],
     templateUrl: './header.component.html',
     styleUrls: ['./header.component.scss']
 })

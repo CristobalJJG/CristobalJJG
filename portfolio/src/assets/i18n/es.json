@@ -37,6 +37,16 @@
             "title": "Aplicación de chat en tiempo real",
             "description": "Aplicación de chat basada en WebSocket con funcionalidades avanzadas"
         },
+        "nanoUi": {
+            "title": "Nano UI",
+            "description": "Biblioteca de componentes de interfaz reutilizables para proyectos Angular."
+        },
+        "nanoChat": {
+            "title": "Nano Chat",
+            "description": "Aplicación de chat en tiempo real con Angular, autenticación Firebase y almacenamiento PostgreSQL."
+        },
+        "github": "Ver en GitHub",
+        "page": "Ver página",
         "analytics": {
             "title": "Panel de analíticas",
             "description": "Plataforma de visualización de datos para análisis empresarial"
@@ -101,15 +111,22 @@
             }
         },
         "bdkapital": {
-            "company": "BDKapital",
-            "title": "Programador full stack / Prácticas",
-            "period": "2022 — 2023 (prácticas) / 2023",
-            "description": "Desarrollo de componentes en Angular, comunicación con backend en Django, manejo de Bases de Datos en MongoDB y despliegue en AWS. Uso de SonarQube y Lighthouse para análisis, refactorización, mejoras estéticas, automatización de copias de seguridad y mantenimiento general del proyecto.",
+            "company": "Vida BD Kapital",
+            "title": "Desarrollador Full Stack",
+            "period": "2022 — 2023",
+            "description": "Desarrollo de aplicaciones web y gestión de bases de datos. Participación en el ciclo completo de vida del software, desde el diseño hasta el despliegue.",
             "details": {
-                "one": "Responsable de coordinación y mejoras continuas.",
-                "two": "Gestión de proyectos y comunicación con stakeholders.",
-                "three": "Implementación de nuevas funcionalidades orientadas al negocio."
+                "one": "Desarrollo de APIs RESTful.",
+                "two": "Gestión de bases de datos SQL y NoSQL.",
+                "three": "Optimización de rendimiento de aplicaciones."
             }
+        },
+        "education": {
+            "title": "Educación y Formación",
+            "school": "Escuela de Ingeniería Informática (EII)",
+            "university": "Universidad de Las Palmas de Gran Canaria",
+            "location": "GRAN CANARIA",
+            "description": "Formación académica enfocada en desarrollo de software, arquitectura de sistemas y gestión de proyectos tecnológicos."
         }
     }
 }
